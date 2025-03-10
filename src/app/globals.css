@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+button {
+  padding: .09em;
+  border: .08em solid gray;
+  border-radius: 3em;
+}
+button:hover {
+  background: #e7e7e7;
+}
