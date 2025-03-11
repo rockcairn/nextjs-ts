@@ -1,22 +1,7 @@
 import Image from "next/image";
 import VoteButton from "./vote-button";
 
-function MountainList () {
-  type Mountain = {
-    id: number;
-    name: string;
-    height: string;
-  }
 
-  const mountains: Mountain[] = [{id: 1, name: 'Elbert', height: '14,419'}, {id: 54, name: 'La Plata', height: '14,013'}];
-  return (
-  <ol>
-    {mountains.map((mountain) => (
-          <li key={mountain.id}>{mountain.id}. {mountain.name} ({mountain.height}ft.)</li>
-        ))} 
-  </ol>
-  );
-}
 
 export default function Home() {
   
@@ -42,7 +27,6 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
           <li>Instantly.</li>
         </ol>
-        <MountainList/>
         <VoteButton/>
         
 
