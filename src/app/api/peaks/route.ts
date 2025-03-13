@@ -20,7 +20,7 @@ const knexConfig = {
 
 export async function GET() {
   const dbconnection = knex(knexConfig.development);
-  const mountains = await dbconnection.select('*').from('mountains');
+  const peaks = await dbconnection.select('*').from('peaks');
 
-  return Response.json(mountains);
+  return Response.json(peaks);
 }

@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "knex migrate:latest",
+    "migration": "knex migrate:make",
+    "seed": "knex seed:run",
+    "seeder": "knex seed:make"
   },
   "dependencies": {
     "clsx": "^2.1.1",

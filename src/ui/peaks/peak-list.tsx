@@ -19,21 +19,20 @@ const knexConfig = {
   },
 };
 
-export default async function MountainList () {
-    type Mountain = {
+export default async function PeakList () {
+    type Peak = {
       id: number;
       name: string;
-      height: string;
-      mountain_range: string
+      height: number;
+      range: string
     }
   
-    // const mountains: Mountain[] = [{id: 1, name: 'Elbert', height: '14,419'}, {id: 54, name: 'La Plata', height: '14,013'}];
     const dbconnection = knex(knexConfig.development);
-    const mountains: Mountain[] = await dbconnection.select('*').from('mountains');
+    const peaks: Peak[] = await dbconnection.select('*').from('peaks');
     return (
     <ol>
-      {mountains.map((mountain) => (
-            <li key={mountain.id}>{mountain.id}. {mountain.name} ({mountain.height}ft.) in the {mountain.mountain_range} range.zscd</li>
+      {peaks.map((peak) => (
+            <li key={peak.id}>{peak.id}. {peak.name} ({peak.height}ft.) in the {peak.range} range.</li>
           ))} 
     </ol>
     );

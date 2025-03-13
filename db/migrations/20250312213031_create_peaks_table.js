@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.increments('id');
     table.string('name');
     table.integer('height');
-    table.string('mounain_range');
+    table.string('range');
   });
 };
 
