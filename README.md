@@ -22,6 +22,8 @@
 1. Install the packages: ``` pnpm install ```
 1. Create a _.env_ file based on _.env.sample_
     - that references your already created mysql database.
+    - > _there are many ways to install mysql and I am using my instance from my
+      https://www.apachefriends.org/ XXAMP install which I use for PHP development._
 1. Create Tables and Seed your database with knex
     - ``` pnpm migrate ```
     - ``` pnpm seed ```
