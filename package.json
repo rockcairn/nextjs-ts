@@ -13,13 +13,16 @@
     "seeder": "knex seed:make"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/forms": "^0.5.10",
     "clsx": "^2.1.1",
     "knex": "^3.1.0",
     "mysql": "^2.18.1",
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+     "zod": "^3.24.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

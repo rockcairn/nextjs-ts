@@ -1,6 +1,8 @@
+import { fetchReports } from '@/lib/data';
+import { Peak } from '@/lib/types';
 import { formatBoolean, formatCombo, formatDateToLocal } from '@/utils/utils';
-import knex from 'knex';
 import Link from 'next/link';
+import { DeleteReport, UpdateReport } from './buttons';
 
 const knexConfig = {
   development: {
@@ -21,26 +23,8 @@ const knexConfig = {
 };
 
 export default async function PeakList() {
-  type Peak = {
-    id: number;
-    name: string;
-    height: number;
-    range: string;
-    domain: string;
-    relative_path: string;
-    description: string;
-    keywords: string;
-    report_date: string;
-    class: string;
-    roundtrip_miles: string;
-    elevation_gain: number;
-    roundtrip_duration: string;
-    solo: boolean;
-    combo: boolean;
-  };
-
-  const dbconnection = knex(knexConfig.development);
-  const peaks: Peak[] = await dbconnection.select('*').from('peaks');
+  
+  const peaks: Peak[] = await fetchReports();
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
@@ -81,9 +65,9 @@ export default async function PeakList() {
                 <th scope="col" className="px-3 py-5 font-bold">
                   Combo
                 </th>
-                {/* <th scope="col" className="relative py-3 pl-6 pr-3">
+                <th scope="col" className="relative py-3 pl-6 pr-3">
                   <span className="sr-only">Edit</span>
-                </th> */}
+                </th>
               </tr>
             </thead>
             <tbody className="bg-white">
@@ -97,13 +81,6 @@ export default async function PeakList() {
                   </td>
                   <td className="whitespace-nowrap py-3 pl-6 pr-3">
                     <div className="flex items-center gap-3">
-                      {/* <Image
-                        src={invoice.image_url}
-                        className="rounded-full"
-                        width={28}
-                        height={28}
-                        alt={`${invoice.name}'s profile picture`}
-                      /> */}
                       <Link 
                       key={peak.name}
                       href={`${peak.domain}${peak.relative_path}`}
@@ -141,24 +118,16 @@ export default async function PeakList() {
                   <td className="whitespace-nowrap px-3 py-3">
                     {formatCombo(peak.combo)}
                   </td>
-                  {/* <td className="whitespace-nowrap py-3 pl-6 pr-3">
+                  <td className="whitespace-nowrap py-3 pl-6 pr-3">
                     <div className="flex justify-end gap-3">
-                      <UpdateInvoice id={invoice.id} />
-                      <DeleteInvoice id={invoice.id} />
+                      <UpdateReport id={peak.id.toString()} />
+                      <DeleteReport id={peak.id.toString()} />
                     </div>
-                  </td> */}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
-          {/* <ol>
-            {peaks.map((peak) => (
-              <li key={peak.id}>
-                {peak.id}. {peak.name} ({peak.height}ft.) in the {peak.range}{' '}
-                range.
-              </li>
-            ))}
-          </ol> */}
         </div>
       </div>
     </div>
