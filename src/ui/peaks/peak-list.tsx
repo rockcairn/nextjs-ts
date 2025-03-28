@@ -4,24 +4,6 @@ import { formatBoolean, formatCombo, formatDateToLocal } from '@/utils/utils';
 import Link from 'next/link';
 import { DeleteReport, UpdateReport } from './buttons';
 
-const knexConfig = {
-  development: {
-    client: 'mysql',
-    connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
-    },
-    migrations: {
-      directory: './migrations',
-    },
-    seeds: {
-      directory: './seeds',
-    },
-  },
-};
-
 export default async function PeakList() {
   
   const peaks: Peak[] = await fetchReports();

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import VoteButton from "./vote-button";
 
 
 

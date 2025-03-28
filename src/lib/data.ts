@@ -45,7 +45,7 @@ export async function fetchPaginatedReports(currentPage: number) {
 }
 
 // Fetch the total number of pages of reports
-export async function fetchReportPages(query: string) {
+export async function fetchReportPages() {
   try {
     const dbconnection = knex(knexConfig.development);
     const [data] = await dbconnection.select('*').count('* as count');

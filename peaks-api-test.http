@@ -1,0 +1,12 @@
+### get all the mountains
+GET http://127.0.0.1:3000/api/peaks HTTP/1.1
+
+### get a votes
+GET http://127.0.0.1:3000/api/votes HTTP/1.1
+
+### post votes
+POST http://127.0.0.1:3000/api/votes HTTP/1.1
+Content-Type: "application/json"
+
+{ "vote": "up"}
+###

@@ -5,3 +5,15 @@ export async function GET() {
     votes: voteCount,
   });
 }
+
+export async function POST(request: Request) {
+  const data = await request.json();
+  if (data.vote === 'up') {
+    voteCount++
+  } else {
+    voteCount--
+  }
+  return Response.json({
+    votes: voteCount,
+  });
+}
