@@ -1,9 +1,8 @@
-import { describe, expect, it, vi } from 'vitest'
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 import { beforeEach } from 'node:test';
-import Page from '../page'
+import { describe, expect, it, vi } from 'vitest';
+import Page from '../page';
 
-import { fetchReports } from '@/lib/data';
  
 describe('Peaks', () => {
   beforeEach(() => {
