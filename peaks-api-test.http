@@ -1,3 +1,12 @@
+### get map api key
+GET http://127.0.0.1:3000/api/map/apikey HTTP/1.1
+
+### get map center
+GET http://127.0.0.1:3000/api/map/center HTTP/1.1
+
+### get map marker data
+GET http://127.0.0.1:3000/api/map HTTP/1.1
+
 ### get all the mountains
 GET http://127.0.0.1:3000/api/peaks HTTP/1.1
 

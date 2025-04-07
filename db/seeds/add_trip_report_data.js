@@ -4,7 +4,7 @@
  */
 exports.seed = async function(knex) {
   
-   // 'Mount Elbert'
+  // 'Mount Elbert'
   await knex('peaks').update({class: 'II,1', roundtrip_miles: '7.6', elevation_gain: 4000, roundtrip_duration: '4.15', solo: 1, combo: 0}).where({id: 1});
   // 'Mount Massive' 
   await knex('peaks').update({class: 'II,2', roundtrip_miles: '6.3', elevation_gain: 3960, roundtrip_duration: '7.15', solo: 1, combo: 0}).where({id: 2});

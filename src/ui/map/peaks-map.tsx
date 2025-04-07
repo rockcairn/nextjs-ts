@@ -1,3 +1,4 @@
+'use client'
 import {
   APIProvider,
   Map,
@@ -5,6 +6,7 @@ import {
 } from '@vis.gl/react-google-maps';
 
 import PoiMarkers, { Poi } from './poi-markers';
+import { Suspense, useEffect, useState } from 'react';
 
 const locations: Poi[] = [
   { key: 'operaHouse', location: { lat: -33.8567844, lng: 151.213108 } },
@@ -25,23 +27,40 @@ const locations: Poi[] = [
 ];
 
 export default function PeaksMap() {
-  // might need to api call to get the Key...
-  const apiKey: string = process.env.GOOGLE_MAPS_API_KEY || '';
-  console.log('key: [' + apiKey + ']');
-  // const centermap =  { lat: 39.050000, lng: -105.497017 } // colorado
-  const centermap =  { lat: -33.860664, lng: 151.208138 }
+
+  const [apiKey, setApiKey] = useState<string | null>(null);
+  const [location, setLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [markers, setMarkers] = useState<Poi[] | null>(null);
+  useEffect(() => {
+    // Fetch location and API key from backend
+    const fetchData = async () => {
+      const keyRes = await fetch('/api/map/apikey');
+      const { key } = await keyRes.json();
+      setApiKey(key);
+      const locRes = await fetch('/api/map/center');
+      const loc = await locRes.json();
+      setLocation(loc);
+      const mrkRes = await fetch('/api/map');
+      const mrk = await mrkRes.json();
+      setMarkers(JSON.parse(JSON.stringify(mrk)));
+    };
+
+    fetchData();
+    console.log('key: [' + apiKey + ']');
+  }, []);
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
         <div className="rounded-lg bg-gray-50 p-2 md:pt-0">
           <div style={{ height: '100vh', width: '100%' }}>
+            <Suspense key={apiKey} fallback={<div>loading</div>}>
             <APIProvider
-              apiKey={apiKey}
+              apiKey={apiKey!}
               onLoad={() => console.log('Maps API has loaded.')}
             >
               <Map
-                defaultZoom={13}
-                defaultCenter={centermap}
+                defaultZoom={7}
+                defaultCenter={location!}
                 onCameraChanged={(ev: MapCameraChangedEvent) =>
                   console.log(
                     'camera changed:',
@@ -50,11 +69,13 @@ export default function PeaksMap() {
                     ev.detail.zoom
                   )
                 }
-                mapId="da37f3254c6a6d1c"
+                mapTypeId={google.maps.MapTypeId.TERRAIN}
+                mapId="ROCKCAIRN_MAP_ID"
               >
-                <PoiMarkers pois={locations} />
+                <PoiMarkers pois={markers!} />
               </Map>
             </APIProvider>
+            </Suspense>
           </div>
         </div>
       </div>
