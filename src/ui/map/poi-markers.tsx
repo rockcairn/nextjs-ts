@@ -5,35 +5,18 @@ import type { Marker } from '@googlemaps/markerclusterer';
 import { MarkerClusterer } from '@googlemaps/markerclusterer';
 import {
     AdvancedMarker,
+    InfoWindow,
     Pin,
     useMap
 } from '@vis.gl/react-google-maps';
+import { boolean } from 'zod';
 
-export type Poi ={ key: string, location: google.maps.LatLngLiteral }
+export type Poi ={ key: string, domain: string, path: string, color: string, ele: number, location: google.maps.LatLngLiteral }
 
 export default function PoiMarkers(props: { pois: Poi[] }) {
     const map = useMap();
+    const [openInfo, setOpenInfo] = useState<string>();
     const [markers, setMarkers] = useState<{[key: string]: Marker}>({});
-    const clusterer = useRef<MarkerClusterer | null>(null);
-    const handleClick = useCallback((ev: google.maps.MapMouseEvent) => {
-      if(!map) return;
-      if(!ev.latLng) return;
-      console.log('marker clicked: ', ev.latLng.toString());
-      map.panTo(ev.latLng);
-    },[]);
-    // Initialize MarkerClusterer, if the map has changed
-    useEffect(() => {
-      if (!map) return;
-      if (!clusterer.current) {
-        clusterer.current = new MarkerClusterer({map});
-      }
-    }, [map]);
-  
-    // Update markers, if the markers array has changed
-    useEffect(() => {
-      clusterer.current?.clearMarkers();
-      clusterer.current?.addMarkers(Object.values(markers));
-    }, [markers]);
   
     const setMarkerRef = (marker: Marker | null, key: string) => {
       if (marker && markers[key]) return;
@@ -53,15 +36,27 @@ export default function PoiMarkers(props: { pois: Poi[] }) {
     return (
       <>
         {props.pois.map( (poi: Poi) => (
+        <div>
           <AdvancedMarker
+            title={poi.key}
             key={poi.key}
             position={poi.location}
             ref={marker => setMarkerRef(marker, poi.key)}
             clickable={true}
-            onClick={handleClick}
+            onClick={() => setOpenInfo(poi.key)}
             >
-              <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
+              <Pin background={poi.color} glyphColor={'#000'} borderColor={'#000'} />
           </AdvancedMarker>
+          {openInfo === poi.key && (<InfoWindow
+            anchor={markers[poi.key]}
+            maxWidth={200}
+            onCloseClick={() => setOpenInfo('')}
+            headerContent={poi.key + " (" + poi.ele + " ft.)"} >
+                <div style={{textAlign: 'center', padding:'1px 2px 10px 2px'}}><a href={`${poi.domain}${poi.path}`} >Trip Report</a>
+                or (<a style={{fontSize: '12px'}} href="#map" onClick={() => {map!.panTo(poi.location); map!.setZoom(12);}} >focus map</a>) </div>
+          </InfoWindow>
+          )};
+        </div>
         ))}
       </>
     );

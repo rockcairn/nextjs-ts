@@ -26,14 +26,15 @@ export async function GET() {
     'marker.latitude as lat',
     'marker.longitude as lng',
     'peaks.name as msg',
-    'peaks.relative_path as url',
+    'peaks.domain',
+    'peaks.relative_path as path',
     'peaks.height as ele',
     'marker.color'
   )
   .orderBy('peaks.height', 'desc');
 
   const poi = markers.map((mark) => (
-    { key: mark.msg, location: {lat: mark.lat, lng: mark.lng}}
+    { key: mark.msg, domain: mark.domain, path: mark.path, color: mark.color, ele: mark.ele, location: {lat: mark.lat, lng: mark.lng}}
   ));
 
   return Response.json(poi);
