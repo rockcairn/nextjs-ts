@@ -1,7 +1,7 @@
 'use client'
 import PeaksMap from "@/ui/map/peaks-map";
 
-export default function Page() {
+export default function Map() {
     return (
       <div className="w-full">
         <div className="flex w-full items-center justify-between">

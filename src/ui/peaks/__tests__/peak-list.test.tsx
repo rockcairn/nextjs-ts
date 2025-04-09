@@ -1,56 +1,59 @@
 import { render, screen } from '@testing-library/react';
-import { beforeEach } from 'node:test';
 import { describe, expect, it, vi } from 'vitest';
-import PeakList from '../peak-list';
+import PeakList from "@/ui/peaks/peak-list";
 
-describe('Peaks List', () => {
-  const mocks = vi.hoisted(() => {
-    return {
-      testPeak: {
-        id: 1,
-        name: 'name',
-        height: 1,
-        range: 'name',
-        domain: 'name',
-        relative_path: 'name',
-        description: 'name',
-        keywords: 'name',
-        report_date: 'name',
-        class: 'name',
-        roundtrip_miles: 'name',
-        elevation_gain: 1,
-        roundtrip_duration: 'name',
-        solo: true,
-        combo: true,
-      },
-    };
-  });
-  beforeEach(() => {
-    vi.mock('@/lib/data', () => {
-        return {
-            fetchReports: vi.fn( async () => [
-                {
-                name: mocks.testPeak.name,
-                height: mocks.testPeak.height,
-                range: mocks.testPeak.range,
-                domain: mocks.testPeak.domain,
-                relative_path: mocks.testPeak.relative_path,
-                description: mocks.testPeak.description,
-                keywords: mocks.testPeak.keywords,
-                report_date: mocks.testPeak.report_date,
-                class: mocks.testPeak.class,
-                roundtrip_miles: mocks.testPeak.roundtrip_miles,
-                elevation_gain: mocks.testPeak.elevation_gain,
-                roundtrip_duration: mocks.testPeak.roundtrip_duration,
-                solo: mocks.testPeak.solo,
-                combo: mocks.testPeak.combo,
-                },
-            ]),
-        };
-    });
-  });
-  it.skip('renders', async () => {
-    render(<PeakList />);
+// Mock external dependencies
+vi.mock('@/lib/data', () => ({
+  fetchReports: vi.fn(async () => [
+    {
+      id: 1,
+      name: 'Mount Test',
+      height: 14000,
+      range: 'Test Range',
+      domain: 'https://example.com',
+      relative_path: '/mount-test',
+      description: 'A test peak',
+      keywords: 'test, peak',
+      report_date: '2024-01-01',
+      class: 'Class 2',
+      roundtrip_miles: '10.5',
+      elevation_gain: 3200,
+      roundtrip_duration: '6.0',
+      solo: true,
+      combo: false,
+    },
+  ]),
+}));
+
+// Mock utility functions
+vi.mock('@/utils/utils', () => ({
+  formatBoolean: (val: boolean) => (val ? 'Yes' : 'No'),
+  formatCombo: (val: boolean) => (val ? 'Combo' : 'Single'),
+  formatDateToLocal: (date: string) => `Local: ${date}`,
+}));
+
+// Stub buttons if necessary
+vi.mock('./buttons', () => ({
+  UpdateReport: () => <button>Edit</button>,
+  DeleteReport: () => <button>Delete</button>,
+}));
+
+describe('<PeakList />', () => {
+  it('renders peak data in table', async () => {
+    render(await PeakList());
+
+    // Check headers
     expect(screen.getByRole('columnheader', { name: 'Rank' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Peak' })).toBeDefined();
+
+    // Check content
+    expect(screen.getByText('Mount Test')).toBeDefined();
+    expect(screen.getByText('14,000')).toBeDefined();
+    expect(screen.getByText('Test Range')).toBeDefined();
+    expect(screen.getByText('Yes')).toBeDefined(); // formatBoolean
+    expect(screen.getByText('Single')).toBeDefined(); // formatCombo
+    expect(screen.getByText('Local: 2024-01-01')).toBeDefined(); // formatDateToLocal
+    expect(screen.getByText('Edit')).toBeDefined();
+    expect(screen.getByText('Delete')).toBeDefined();
   });
 });
