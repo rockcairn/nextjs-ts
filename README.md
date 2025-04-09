@@ -12,11 +12,14 @@
 - knex
 - mysql
 - clsx
+- @vis.gl/react-google-maps
 
 ## Concepts
 
-- pull from various hello world and getting started repos
+- Pulled from various hello world and getting started repos
 - This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+- Content choices are from [rockcairn.com](http://rockcairn.com)
+  - a reinvisioning of the rockcairn site as Nextjs versus php
 
 ## Getting Started
 1. Install the packages: ``` pnpm install ```
@@ -24,11 +27,14 @@
     - that references your already created mysql database.
     - > _there are many ways to install mysql and I am using my instance from my
       https://www.apachefriends.org/ XXAMP install which I use for PHP development._
+    - Also add your google api maps key _GOOGLE_MAPS_API_KEY_
 1. Create Tables and Seed your database with knex
     - ``` pnpm migrate ```
     - ``` pnpm seed ```
+1. Adjust the _package.json_ scripts:dev tag to match your desired ```-hostname``` and ```-p``` port
 1. Run the development server: ``` pnpm dev ```
-1. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Open [http://rockcairn.localhost.com:3000](http://rockcairn.localhost.com:3000) with your browser to see the results
+    1. Adjust the url for your hostname and port choices in your _package.json_ file
 
 ## Learn More
 

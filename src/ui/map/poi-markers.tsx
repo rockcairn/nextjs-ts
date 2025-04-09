@@ -1,12 +1,10 @@
 'use client'
 import { useRef, useState } from 'react';
 
-import type { Marker } from '@googlemaps/markerclusterer';
 import {
     AdvancedMarker,
     InfoWindow,
     Pin,
-    useAdvancedMarkerRef,
     useMap
 } from '@vis.gl/react-google-maps';
 
@@ -26,19 +24,21 @@ export default function PoiMarkers(props: { pois: Poi[] }) {
             key={poi.key}
             ref={(ref) => { markerRefs.current[poi.key] = ref;}}
             clickable={true}
-            // onClick={() => setOpenInfo(poi.key)}
             onClick={() => setOpenMarkerId(poi.key)}
             >
               <Pin background={poi.color} glyphColor={'#000'} borderColor={'#000'} />
               {openMarkerId === poi.key && (<InfoWindow
-            // anchor={markers[poi.key]}
             anchor={markerRefs.current[poi.key]!}
-            maxWidth={200}
-            // onCloseClick={() => setOpenInfo('')}
+            maxWidth={240}
             onCloseClick={() => setOpenMarkerId(null)}
             headerContent={poi.key + " (" + poi.ele + " ft.)"} >
-                <div style={{textAlign: 'center', padding:'1px 2px 10px 2px'}}><a href={`${poi.domain}${poi.path}`} >Trip Report</a>
-                or (<a style={{fontSize: '12px'}} href="#map" onClick={() => {map!.panTo(poi.location); map!.setZoom(12);}} >focus map</a>) </div>
+                <div style={{textAlign: 'center', padding:'1px 2px 10px 2px'}} className='text-gray-500 dark:text-gray-400'>
+                  <a href={`${poi.domain}${poi.path}`} className='font-medium text-blue-500 p-1'>
+                    <span className="group-hover:underline">Trip Report</span>
+                  </a>
+                    or
+                  (<a style={{fontSize: '12px'}} className='font-medium text-blue-500 p-1' href="#map" onClick={() => {map!.panTo(poi.location); map!.setZoom(12);}} >focus map</a>)
+                </div>
           </InfoWindow>
           )};
           </AdvancedMarker>
