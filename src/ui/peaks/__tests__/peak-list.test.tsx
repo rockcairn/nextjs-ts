@@ -45,6 +45,15 @@ describe('<PeakList />', () => {
     // Check headers
     expect(screen.getByRole('columnheader', { name: 'Rank' })).toBeDefined();
     expect(screen.getByRole('columnheader', { name: 'Peak' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Range' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Elevation (ft)' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Grade, Class' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Miles (rt)' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Elev.Gain (ft)' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Time (hh.mm)' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Climbed' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Solo' })).toBeDefined();
+    expect(screen.getByRole('columnheader', { name: 'Combo' })).toBeDefined();
 
     // Check content
     expect(screen.getByText('Mount Test')).toBeDefined();
