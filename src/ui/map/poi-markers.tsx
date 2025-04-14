@@ -42,8 +42,6 @@ export default function PoiMarkers(props: { pois: Poi[] }) {
           </InfoWindow>
           )};
           </AdvancedMarker>
-         
-        // </div>
         ))}
       </>
     );

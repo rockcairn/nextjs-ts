@@ -6,8 +6,7 @@ import CreateReportForm from "@/ui/peaks/create-form";
 vi.mock('react', async () => {
   const actual = await vi.importActual('react-dom');
   let mockState = { errors: [], message: ''};
-  const mockAction = vi.fn(async (prevState, formData) => {
-    // Simulate action logic and update state
+  const mockAction = vi.fn(async () => {
     mockState = { errors: [], message: 'Action completed' };
     return mockState;
   });

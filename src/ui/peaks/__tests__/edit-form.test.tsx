@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import EditReportForm from "@/ui/peaks/edit-form";
 import { formatDateAsISO } from '@/utils/utils';
@@ -7,8 +7,7 @@ import { formatDateAsISO } from '@/utils/utils';
 vi.mock('react', async () => {
   const actual = await vi.importActual('react-dom');
   let mockState = { errors: [], message: ''};
-  const mockAction = vi.fn(async (prevState, formData) => {
-    // Simulate action logic and update state
+  const mockAction = vi.fn(async () => {
     mockState = { errors: [], message: 'Action completed' };
     return mockState;
   });

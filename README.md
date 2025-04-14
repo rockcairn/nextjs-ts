@@ -21,6 +21,10 @@
 - Content choices are from [rockcairn.com](http://rockcairn.com)
   - a reinvisioning of the rockcairn site as Nextjs versus php
 
+| Home Page  | Peaks Page | Map Page   |
+| ---------- | ---------- | ---------- |
+| ![Home Page](/public/documentation/home-page.jpg) | ![Peaks Page](/public/documentation/peaks-page.jpg) | ![Map Page](/public/documentation/map-page.jpg) |
+
 ## Getting Started
 1. Install the packages: ``` pnpm install ```
 1. Create a _.env_ file based on _.env.sample_
@@ -38,7 +42,9 @@
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Google Maps Lab](https://developers.google.com/codelabs/maps-platform/maps-platform-101-react-js) - with vis.gl/react-google-maps
+- [React Google Maps](https://visgl.github.io/react-google-maps/) - vis.gl/react-google-maps github repo
