@@ -27,6 +27,7 @@ export default function CreateReportForm() {
                 placeholder="sky peak"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
                 aria-describedby="name-error"
+                autoComplete='off'
               />
             </div>
             <div id="name-error" aria-live="polite" aria-atomic="true">
@@ -48,7 +49,7 @@ export default function CreateReportForm() {
           <div className="relative mt-2 rounded-md">
             <div className="relative">
               <input
-                id="peak-height"
+                id="height"
                 name="height"
                 type="number"
                 placeholder="14001"
