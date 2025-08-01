@@ -1,7 +1,6 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
-import { afterEach, describe, expect, it, vi } from 'vitest';
 import CreateReportForm from "@/ui/peaks/create-form";
-import { useActionState } from 'react';
+import { cleanup, render, screen } from '@testing-library/react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 // Mock external dependencies as after submit with errors
 vi.mock('react', async () => {
