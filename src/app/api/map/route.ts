@@ -1,25 +1,9 @@
 import knex from "knex";
-
-const knexConfig = {
-  development: {
-    client: 'mysql2',
-    connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
-    },
-    migrations: {
-      directory: './migrations',
-    },
-    seeds: {
-      directory: './seeds',
-    },
-  },
-};
+import config from '../../../../knexfile';
 
 export async function GET() {
-  const dbconnection = knex(knexConfig.development);
+  const env = process.env.NODE_ENV || 'development';
+  const dbconnection = knex(config[env]);
   const markers = await dbconnection('peaks')
   .join('marker', 'peaks.marker_id', 'marker.id')
   .select(

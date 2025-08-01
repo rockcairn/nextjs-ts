@@ -5,12 +5,32 @@ require('dotenv').config();
  */
 module.exports = {
   development: {
-    client: 'mysql2',
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+    migrations: {
+      directory: './db/migrations',
+    },
+    seeds: {
+      directory: './db/seeds',
+    },
+  },
+  test: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+    migrations: {
+      directory: './db/migrations',
+    },
+    seeds: {
+      directory: './db/seeds',
+    },
+  },
+  production: {
+    client: 'pg',
     connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
+      connectionString: process.env.DATABASE_URL,
+      ssl: {
+        rejectUnauthorized: false, // required for Neon & other cloud Postgres setups
+      },
     },
     migrations: {
       directory: './db/migrations',

@@ -4,19 +4,43 @@
  */
 exports.seed = async function(knex) {
   // 'Mount Elbert'
-  await knex('peaks').update({marker_id: 1}).where({id: 1});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 39.117802, longitude: -106.445396})})
+      .where({name: 'Mount Elbert'});
   // 'Mount Massive' 
-  await knex('peaks').update({marker_id: 2}).where({id: 2});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 39.187500, longitude: -106.475700})})
+  .where({name: 'Mount Massive'});
   // 'Mount Harvard'
-  await knex('peaks').update({marker_id: 3}).where({id: 3});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 38.924400, longitude: -106.320702})})
+      .where({name: 'Mount Harvard'});
   // 'Blanca Peak'
-  await knex('peaks').update({marker_id: 4}).where({id: 4});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 37.577499, longitude: -105.485703})})
+      .where({name: 'Blanca Peak'});
   // 'La Plata Peak'
-  await knex('peaks').update({marker_id: 5}).where({id: 5});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 39.029400, longitude: -106.472900})})
+      .where({name: 'La Plata Peak'});
   // 'Uncompahgre Peak'
-  await knex('peaks').update({marker_id: 6}).where({id: 6});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 38.071701, longitude: -107.462097})})
+      .where({name: 'Uncompahgre Peak'});
   // 'Crestone Peak'
-  await knex('peaks').update({marker_id: 7}).where({id: 7});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 37.966667, longitude: -105.585281})})
+      .where({name: 'Crestone Peak'});
   // 'Mount Lincoln'
-  await knex('peaks').update({marker_id: 8}).where({id: 8});
+  await knex('peaks').update({marker_id: knex('marker')
+      .select('id')
+      .where({latitude: 39.351391, longitude: -106.111664})})
+      .where({name: 'Mount Lincoln'});
 };

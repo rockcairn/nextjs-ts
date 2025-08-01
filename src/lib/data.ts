@@ -1,21 +1,12 @@
 import knex from 'knex';
 import { Peak } from './types';
+import config from '../../knexfile';
 
-const knexConfig = {
-  development: {
-    client: 'mysql2',
-    connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
-    },
-  },
-};
+const env = process.env.NODE_ENV || 'development';
+const dbconnection = knex(config[env]);
 
 export async function fetchReports(): Promise<Peak[]> {
   try {
-    const dbconnection = knex(knexConfig.development);
     const peaks: Peak[] = await dbconnection.select('*').from('peaks');
     return peaks;
   } catch (error) {
@@ -31,7 +22,6 @@ export async function fetchPaginatedReports(currentPage: number) {
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
   
   try {
-    const dbconnection = knex(knexConfig.development);
     const peaks: Peak[] = await dbconnection.select('*')
       .from('peaks')
       .orderBy('id', 'desc')
@@ -47,7 +37,6 @@ export async function fetchPaginatedReports(currentPage: number) {
 // Fetch the total number of pages of reports
 export async function fetchReportPages() {
   try {
-    const dbconnection = knex(knexConfig.development);
     const [data] = await dbconnection.select('*').count('* as count');
 
     const totalPages = Math.ceil(Number(data.count) / ITEMS_PER_PAGE);
@@ -61,7 +50,6 @@ export async function fetchReportPages() {
 // Fetch a single report by ID
 export async function fetchReportById(id: string) {
   try {
-    const dbconnection = knex(knexConfig.development);
     const peak: Peak = await dbconnection.select('*').from('peaks').where({id: parseInt(id)}).first();
     return peak;
   } catch (error) {

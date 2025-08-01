@@ -4,19 +4,10 @@ import knex from 'knex';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
+import config from '../../knexfile';
 
-const knexConfig = {
-  development: {
-    client: 'mysql2',
-    connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
-    },
-  },
-};
-const dbconnection = knex(knexConfig.development);
+const env = process.env.NODE_ENV || 'development';
+const dbconnection = knex(config[env]);
 
 const FormSchema = z.object({
   id: z.string(),

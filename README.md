@@ -27,20 +27,17 @@
 
 ## Getting Started
 1. Install the packages: ``` pnpm install ```
-1. Install mysql database
-    ```
-    brew install mysql@8.0
-    ---
-    brew services start mysql@8.0
-    
-    mysql -u root
-    > CREATE DATABASE IF NOT EXISTS peakdb;
-    > CREATE USER 'jstest'@'%' IDENTIFIED BY 'your_password_here';
-    > GRANT ALL PRIVILEGES ON peakdb.* TO 'jstest'@'%';
-    quit
-    ```
-    - Notes: [README_MYSQL.md](README_MYSQL.md)
-1. Create a _.env_ file based on _.env.sample_
+1. Install a postgres database
+```
+brew install postgresql
+brew services start postgresql
+```
+- for macos if you don't setup a user its just your macos user name without password
+```
+psql postgres
+> CREATE DATABASE <databasename>;
+```
+1. Create a _.env_  and _.env.local_ file based on _.env.sample_
     - that references your already created mysql database.
     - Also add your google api maps key _GOOGLE_MAPS_API_KEY_
 1. Create Tables and Seed your database with knex
