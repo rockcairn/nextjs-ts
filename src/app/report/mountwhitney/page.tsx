@@ -12,7 +12,7 @@ export default function Page() {
           </h1>
         </li>
         <li className="climbing-report-range">
-          <Link className="climbing hover:underline hover:underline-offset-4" href="../peaks?search=SN">
+          <Link className="climbing hover:underline hover:underline-offset-4" href="../peaks?search=Sierra%20Nevada">
             Sierra Nevada Range
           </Link>
         </li>
