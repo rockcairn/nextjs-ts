@@ -7,7 +7,7 @@ const dbconnection = knex(config[env]);
 
 export async function fetchReports(): Promise<Peak[]> {
   try {
-    const peaks: Peak[] = await dbconnection.select('*').from('peaks');
+    const peaks: Peak[] = await dbconnection.select('*').from('peaks').orderBy('height', 'desc');
     return peaks;
   } catch (error) {
     console.error('Database Error:', error);

@@ -37,3 +37,151 @@ body {
   background-color: #D1D6C8;
   border-radius: 4px 4px 4px 4px;
 }
+
+/* 
+	RockCairn.com (sitecss.css)
+*/
+
+.climbing-h1 {color: black; font-size: 20px; font-family: Helvetica,Arial,sans-serif}
+.climbing-h2 {color: black; font-size: 18px; font-weight: 500; font-family: Helvetica,Arial,sans-serif;}
+.climbing-h3 {color: black; font-size: 16px; font-family: Helvetica,Arial,sans-serif;}
+.climbing-text {color: black; font-size: 16px; font-family: "Times New Roman",Times,serif;}
+.climbing-med-text {color: black; font-size: 12px; font-family: "Times New Roman",Times,serif;}
+.climbing-sm-text {color: black; font-size: 10px; font-family: "Times New Roman",Times,serif;}
+.caption { font-size: 16px; font-family: "Times New Roman",Times,serif; font-style: italic;}
+
+.alert-msg {font-size: 18px; color: #CC0000; font-family: "Times New Roman",Times,serif;}
+
+.navbar-nav .nav-item a {
+	font-size: 1.1rem;
+}
+.navbar-brand {
+	font-size: 1.325rem;
+}
+
+/* pullin what you need */
+.content {
+	text-align: left;
+	height: 100%;
+	background-color: #FFFFFF;
+	border: 1px solid #D1D6C8;
+	font-size: 14px;
+	font-family: "Times New Roman",Times,serif;
+	padding: 4px 6px 0 6px;
+	min-height: 1024px;
+	margin-top: 1px;
+  }
+
+  section#timeline {
+    margin-top: 10px;
+  }
+
+  section#details p {
+    margin-top: 10px;
+  }
+  
+  .rc-bg-light {
+	background-color: #D1D6C8;
+  }
+  .dropdown-item:hover {
+	background-color: #D1D6C8;
+  }
+  .bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+  }
+
+  @media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+	  font-size: 3.5rem;
+	}
+  }
+
+  /* fix slideshow width */
+  @media (min-width: 576px) {
+	.modal-dialog {
+	  max-width: 533px;
+	}
+}	
+
+a.home-page:link, a.home-page:active, a.home-page:visited {
+	font-size: 16px; 
+}
+a.climbing:link, a.climbing:active, a.climbing:visited {
+	font-size: 16px;
+  font-weight: 600;
+  color: #0b57d0;
+}
+
+/*
+	personal lists
+*/
+dl.climbing-list dt {
+	font-size: 14px;
+}
+dl.climbing-list dd {
+	margin-left:20px;
+}
+
+.as-table dd {
+	display: inline-block;
+	width: 155px;
+	vertical-align: top;
+	margin: 0;
+	padding: 1px;
+}
+ul.climbing-list {
+  list-style-type: disc;
+}
+ol.climbing-list li {
+	margin-left:5px;
+}
+
+/*
+	climbing report nav secton
+*/
+.climbing-report-nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 30px;
+}
+.climbing-report-title {
+	color: black; 
+	font-size: 20px; 
+	font-family: Helvetica,Arial,sans-serif;
+	margin: 0;
+	float: left;
+}
+.climbing-report-range {
+	margin: 0;
+	padding-right: 20px;
+	float: right;
+}
+.climbing-report-image, .landing-border {
+	border-width: 4px;
+	border-style: ridge;
+}
+
+/*
+	tables
+*/
+table.climbing td {
+	border: 1px solid #000000;
+	padding: 2px;
+	margin: 2px;
+	font-size: 16px;
+	font-family: "Times New Roman",Times,serif;
+	text-align: left;
+	overflow: hidden;
+	line-height: 20px;
+  }
+
+  tr.climbing-table-titles, td.climbing-table-titles {
+	font-weight: bold;
+}
+
+  /* pullin what you need end */

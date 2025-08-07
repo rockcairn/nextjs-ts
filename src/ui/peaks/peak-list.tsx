@@ -53,20 +53,19 @@ export default async function PeakList() {
               </tr>
             </thead>
             <tbody className="bg-white">
-            {peaks.map((peak) => (
+            {peaks.map((peak, index) => (
                 <tr
                   key={peak.id}
                   className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg"
                 >
                   <td className="whitespace-nowrap px-3 py-3">
-                  {peak.id}
+                  {index + 1}
                   </td>
                   <td className="whitespace-nowrap py-3 pl-6 pr-3">
                     <div className="flex items-center gap-3">
                       <Link 
                       key={peak.name}
                       href={`${peak.domain}${peak.relative_path}`}
-                      target='_blank'
                       className='flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3'
                       >
                         <p className="hidden md:block">{peak.name}</p>
