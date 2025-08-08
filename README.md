@@ -31,6 +31,7 @@
 ```
 brew install postgresql
 brew services start postgresql
+psql -U <username> -w <database>
 ```
 - for macos if you don't setup a user its just your macos user name without password
 ```

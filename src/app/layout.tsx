@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SideNav from "./sidenav";
+import Footer from "./footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,8 @@ export default function RootLayout({
           <div className="w-full flex-none md:w-64">
             <SideNav />
           </div>
-          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}<Footer /></div>
+          
         </div>
       </body>
     </html>

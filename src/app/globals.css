@@ -62,13 +62,13 @@ body {
 /* pullin what you need */
 .content {
 	text-align: left;
-	height: 100%;
+	/* height: 100%; */
 	background-color: #FFFFFF;
 	border: 1px solid #D1D6C8;
 	font-size: 14px;
 	font-family: "Times New Roman",Times,serif;
 	padding: 4px 6px 0 6px;
-	min-height: 1024px;
+	/* min-height: 1024px; */
 	margin-top: 1px;
   }
 

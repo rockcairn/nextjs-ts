@@ -77,7 +77,7 @@ export default function Page() {
 
                 <td width="80%">
                   -
-                  <a href="la_plata_peak.php" className="climbing">
+                  <a href="laplatapeak" className="climbing">
                     Climb La Plata Peak
                   </a>
                 </td>
@@ -137,22 +137,20 @@ export default function Page() {
         </section>
         <section id="details">
           <p>
-            <span className="climbing-text">
-              <span className="climbing-h2">Driving Directions </span>
-              South of Leadville at the junction of 24/82 go west on 82 for 4
-              miles to the Lake View campground turn off (you will turn to the
-              right). On this road go about 1.25 miles, you will pass the
-              campground on your left at about 1.0 miles. You will reach the
-              "Sure Pretty Overlook" also known as the South Elbert TH (paved
-              TH) at the 1.25 mark. This parking lot is near a switchback. Just
-              to the North of the parking lot is a dirt road that marks the
-              beginning of the Elbert Trail, drive down this dirt road for 1.8
-              miles to reach the 4x4 TH. The trailhead is marked as the Colorado
-              Trail. After parking here you hike immediately across a bridge and
-              then travel North about a half a mile to the intersection of the
-              Colorado Trail and East Ridge Elbert Trail. Climb the East Ridge
-              Elbert Trail to the Summit.
-            </span>
+            <span className="climbing-h2">Driving Directions </span>
+            South of Leadville at the junction of 24/82 go west on 82 for 4
+            miles to the Lake View campground turn off (you will turn to the
+            right). On this road go about 1.25 miles, you will pass the
+            campground on your left at about 1.0 miles. You will reach the "Sure
+            Pretty Overlook" also known as the South Elbert TH (paved TH) at the
+            1.25 mark. This parking lot is near a switchback. Just to the North
+            of the parking lot is a dirt road that marks the beginning of the
+            Elbert Trail, drive down this dirt road for 1.8 miles to reach the
+            4x4 TH. The trailhead is marked as the Colorado Trail. After parking
+            here you hike immediately across a bridge and then travel North
+            about a half a mile to the intersection of the Colorado Trail and
+            East Ridge Elbert Trail. Climb the East Ridge Elbert Trail to the
+            Summit.
           </p>
         </section>
       </article>
