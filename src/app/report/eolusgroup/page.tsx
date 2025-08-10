@@ -28,7 +28,7 @@ export default function Page() {
           priority
         />
       </div>
-      <ul className="climbing-list">
+      <ul className="climbing-list pl-6">
         <li>
           &quot;We started out the hike from the train following a guy whom we
           nicknamed Mr. Flatulence, we soon passed him, but we passed him again
