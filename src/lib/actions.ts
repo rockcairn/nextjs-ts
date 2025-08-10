@@ -41,11 +41,21 @@ export type State = {
 
 const CreateReport = FormSchema.omit({ id: true });
 
-export async function createReport(prevState: State, formData: FormData) {
+function checkProductionRestrictions() {
+  if (process.env.NODE_ENV == 'production') {
+    throw new Error('CUD operations are disabled in production');
+  }
+}
+
+export async function createReport(prevState: State, formData: FormData, password: string) {
 
   console.log("state: " + JSON.stringify(prevState));
   console.log("formData.keys " + JSON.stringify(formData.keys()));
   console.log("formData.values " + JSON.stringify(formData.values()));
+  
+  // Authenticate the user if necessary
+  checkProductionRestrictions();
+
   // Validate form fields using Zod
   const validatedFields = CreateReport.safeParse({
     name: formData.get('name'),
@@ -101,7 +111,11 @@ export async function createReport(prevState: State, formData: FormData) {
   redirect('/peaks');
 }
 
-export async function updateReport(id: string, prevState: State, formData: FormData) {
+export async function updateReport(id: string, prevState: State, formData: FormData, password: string) {
+
+    // Authenticate the user if necessary
+  checkProductionRestrictions();
+
   // Validate form fields using Zod
   const validatedFields = CreateReport.safeParse({
     name: formData.get('name'),
@@ -159,7 +173,10 @@ export async function updateReport(id: string, prevState: State, formData: FormD
   redirect('/peaks');
 }
 
-export async function deleteReport(id: string) {
+export async function deleteReport(id: string, password: string) {
+    // Authenticate the user if necessary
+  checkProductionRestrictions();
+
   try {
     await dbconnection('peaks').delete().where({ id: id });
   } catch (error) {
