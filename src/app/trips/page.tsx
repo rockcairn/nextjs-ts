@@ -1,6 +1,5 @@
 import TripList from "@/ui/trips/trip-list";
 import NotImplemented from "../not-implemented";
-import VoteButton from "../vote-button";
 
 export default function Page() {
     return (

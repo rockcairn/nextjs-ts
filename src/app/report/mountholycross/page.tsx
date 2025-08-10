@@ -174,7 +174,7 @@ export default function Page() {
             2 years earlier, as there where more stable rock step leading across
             the creek. Once across and on my way up the North Ridge of Holy
             Cross I heard the bugling of some Elk (note for those hunters, this
-            is a wilderness area so don't get any ideas).
+            is a wilderness area so don&apos;t get any ideas).
           </p>
           <p>
             On the summit I was met by a very cold wind chill, as well as three

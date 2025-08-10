@@ -41,8 +41,8 @@ export default function Page() {
             </span>
             Elevation Uncompahgre 14,314ft. and Wetterhorn 14,020ft. (
             <span className="climbing-h2">Sept. 22, 2002</span>)
-            &quot;Matterhorn Trail Head: Uncompahgre's Southwest Slopes and
-            Wetterhorn's Southeast Ridge&quot;, this trail is a class 1,2, and
+            &quot;Matterhorn Trail Head: Uncompahgre&apos;s Southwest Slopes and
+            Wetterhorn&apos;s Southeast Ridge&quot;, this trail is a class 1,2, and
             3, that runs (16.5 miles rt. with 5,850ft. gain). What makes this
             trail hard is the length, the two peaks are 3 miles apart. The high
             mountain pass between the two peaks gives the adventurer awesome

@@ -49,7 +49,7 @@ export default function Page() {
             Mountain Mennonite Camp and then stay right to the Crags Campground.
             The hiking trail out of the Crags is nice, however once you get to
             Pike Peak road with the noise of traffic and the less then
-            interesting trail, you begin saying to yourself, &quot;let's just
+            interesting trail, you begin saying to yourself, &quot;let&apos;s just
             get this over with&quot;.
           </p>
 
@@ -116,7 +116,7 @@ export default function Page() {
             trail indicating that it is the trail to Devils Playground. During
             the first part of the hike I did a lot of turning around and looking
             back at the trail I was coming up, this is because there were really
-            nice views behind me. The parking lot at Devil's Playground is a
+            nice views behind me. The parking lot at Devil&apos;s Playground is a
             mess, erosion has really taken hold there. The trail from the
             parking lot to the summit follows next to the road. The trail is at
             times closer then the 50ft. minimum. the first and last parts of the
@@ -131,9 +131,9 @@ export default function Page() {
             particular day, I summited and the visibility was about 15 miles, so
             the views out to the plains were not as good as they could have
             been. With the not so great views and masses of non-sweaty people
-            (those who didn't climb the peak in one fashion or another) made me
+            (those who didn&apos;t climb the peak in one fashion or another) made me
             feel the need to trail run most of the top section of this hike. I
-            didn't see any need to enjoy the summit and roadside trail anymore
+            didn&apos;t see any need to enjoy the summit and roadside trail anymore
             then I had to. For a scenic hike I think that the Barr Trail is
             probably the better choice of trails for climbing Pikes Peak.
           </p>

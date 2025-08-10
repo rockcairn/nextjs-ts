@@ -38,7 +38,7 @@ export default async function TripList() {
               </tr>
             </thead>
             <tbody className="bg-white">
-              {trips.map((trip, index) => (
+              {trips.map((trip) => (
                 <tr
                   key={trip.id}
                   className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg"

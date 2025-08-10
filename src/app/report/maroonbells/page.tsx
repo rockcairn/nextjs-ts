@@ -47,7 +47,7 @@ export default function Page() {
             trail starts with a nice valley walk for 2 miles until you leave the
             trail, cross a creek and start your uphill climb. The important part
             is to make the correct traverse on the front of North Maroon so that
-            you enter the right gully and head up to North's ridge line. Once on
+            you enter the right gully and head up to North&apos;s ridge line. Once on
             top the traverse is reached from the south or back side of North.
             The traverse is pretty straight forward and the two locations for
             repelling can actually be down climbed fairly easily if you are not
@@ -130,7 +130,7 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>6:45PM</td>
                 <td>
-                  -arrive at Quincy's Bar and Grill in Leadville after taking
+                  -arrive at Quincy&apos;s Bar and Grill in Leadville after taking
                   I-24 over independence pass.
                 </td>
               </tr>
@@ -138,7 +138,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>10:40PM</td>
-                <td>-arrive back in Denver after Prime Rib at Quincy's.</td>
+                <td>-arrive back in Denver after Prime Rib at Quincy&apos;s.</td>
               </tr>
             </tbody>
           </table>
@@ -166,10 +166,10 @@ export default function Page() {
             Cairns clearly mark the path across the glacier and to the pivotal
             traverse into the first gully/terrace steps up North Maroon. Toward
             the top of the gully you have a choice of going to the south or left
-            that traverses over to another gully and up to North's ridge (this
-            might be easier), or going right to North's ridge and doing a short
+            that traverses over to another gully and up to North&apos;s ridge (this
+            might be easier), or going right to North&apos;s ridge and doing a short
             class 4 move up one of the bell cord and continuing to follow the
-            ridge. We decided to follow Gerry Roach's book and head to the
+            ridge. We decided to follow Gerry Roach&apos;s book and head to the
             ridge. Once on top of the bell cord you end up on top of the gully
             that was describe as the first choice above.
           </p>
@@ -195,7 +195,7 @@ export default function Page() {
             of&nbsp; the traverse and sometime along the back side or west side
             of the ridge. The first repel area comes about half way between the
             two peaks and already has some webbing setup (and two carabineers
-            that we left, unless they have now been added to someone else's
+            that we left, unless they have now been added to someone else&apos;s
             collection...thieves). This repel is not too bad, I down climbed the
             first part but then took advantage of the rope we brought, and
             repelled the second part of this first repel area. After retrieving

@@ -105,33 +105,33 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>8:00AM</td>
                 <td>
-                  -summit Missouri Mountain via Missouri's Northwest Ridge
+                  -summit Missouri Mountain via Missouri&apos;s Northwest Ridge
                 </td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
                 <td>9:15AM</td>
                 <td>
-                  -Elkhead pass via&nbsp; Missouri's East ridge and South face.
+                  -Elkhead pass via&nbsp; Missouri&apos;s East ridge and South face.
                 </td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
                 <td>10:00AM</td>
                 <td>
-                  -from Elkhead Pass take Mount Belford trail to Oxford's West
+                  -from Elkhead Pass take Mount Belford trail to Oxford&apos;s West
                   Slopes trail intersection.
                 </td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
                 <td>10:45AM</td>
-                <td>-summit Mount Oxford via Oxford's West Slopes.</td>
+                <td>-summit Mount Oxford via Oxford&apos;s West Slopes.</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
                 <td>11:50AM</td>
-                <td>-summit Mount Belford via Belford's South Ridge.</td>
+                <td>-summit Mount Belford via Belford&apos;s South Ridge.</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -149,7 +149,7 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>3:15PM</td>
                 <td>
-                  -off to Huron Peak's{' '}
+                  -off to Huron Peak&apos;s{' '}
                   <a className="climbing" href="huronpeak">
                     South Clear Creek TH
                   </a>
@@ -179,7 +179,7 @@ export default function Page() {
             still have a long walk the actual peak. After reaching the summit on
             Missouri, I looked at the next goal, Mount Belford, which required a
             lot of elevation loss then gain. This made me remember the route
-            down Missouri's Northwest Ridge. I thought that Roach's book said
+            down Missouri&apos;s Northwest Ridge. I thought that Roach&apos;s book said
             that it was a class 2 or 3 route (actually the book says it is a
             class 4 up climb only route, oops). I though that I would be able to
             make it down the ridge and for go the elevation loss I would have

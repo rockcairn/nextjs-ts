@@ -191,7 +191,7 @@ export default function Page() {
             <span className="climbing-h2">Thrusday</span>
             <br />
             Having not made arrangements for staying in Durango, we spent the
-            rather warn night in the back of Tim's truck in the train station
+            rather warn night in the back of Tim&apos;s truck in the train station
             parking lot. I am not sure that this is a suggested plan. I ran into
             a couple hikers on the train in morning that had stayed at a KOA
             campground just outside of town.&nbsp;
@@ -237,7 +237,7 @@ export default function Page() {
             The so-called &quot;Cat Walk&quot; was more like a &quot;Cake
             Walk&quot; the only issue would be exposer, if you have a problem
             with that. We ended up doing a couple short class 4 maneuvers, but
-            they could have been avoided if you don't mind a little down
+            they could have been avoided if you don&apos;t mind a little down
             climbing. The summit of Eolus was great and we had good views all
             the way to the Uncompahgre Group. The only advice that I have about
             the climb is to traverse onto the SE face during that last 600ft.
@@ -290,11 +290,11 @@ export default function Page() {
             difficult climb then Eolus because of the rock. We made a B-Line to
             the tent from Windom, a variation route in the Roach book. The route
             took us down the Windom ridgeline to the saddle with Peak 18 and
-            then down the grassy slopes of Windom's Southwest face.&nbsp;
+            then down the grassy slopes of Windom&apos;s Southwest face.&nbsp;
           </p>
           <p>
             Back at the tent I found my half-eaten sandals that a marmot had
-            taken some a liking to (hmm.. didn't I mention something about
+            taken some a liking to (hmm.. didn&apos;t I mention something about
             hanging your gear). My flip-flops were in the tent vestibule, I had
             meant to put them up on the rope line that was also holding our
             backpacks off the ground, but in the morning and darkness I must

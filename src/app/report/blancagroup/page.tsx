@@ -218,7 +218,7 @@ export default function Page() {
             to the saddle between the &quot;Iron Nipple&quot; and Lindsey. Once
             on the ridgeline you continue up and then around the left side
             (North Face) and up a rock couloir, this starts the class 2+ climb.
-            You actually traverse around the lift side for some time, so don't
+            You actually traverse around the lift side for some time, so don&apos;t
             head up a couloir too soon. Once you are up the first couloir you
             have to traverse over loose rock and sand to another couloir. Once
             you are up the final couloir the summit is about a 1/5th of a mile
@@ -258,14 +258,14 @@ export default function Page() {
             actually snowing up above the 12,500 foot mark. So once on the rock
             pile up Blanca, I encounter a thin layer of ice covering the surface
             of all the rocks. Adding insult to injury the clouds moved it at
-            this point and obstructed my view of Blanca's summit. There are many
+            this point and obstructed my view of Blanca&apos;s summit. There are many
             cairned routes up Blanca and I think the best possible route is to
             stay in the middle of the large talus face on Blanca and then
             traverse to Blanca Northwest ridge before gaining the summit. There
             were numerous hikers turning around at this point, but I felt
             determined and I was prepared having brought my winter gear for this
             weekend. Some hikers were not so well prepared, a hooded sweatshirt
-            with no hat or gloves doesn't cut it.
+            with no hat or gloves doesn&apos;t cut it.
           </p>
           <p>
             After summiting and making the careful and slow descent off of
@@ -320,7 +320,7 @@ export default function Page() {
             enough, however the last 20ft.out of the &quot;hour glass&quot; was
             still equally as difficult from the top side. The only other
             climbers I passed this day, were a couple who had just come up the
-            couloir which gives you access to Little Bear's West ridge.
+            couloir which gives you access to Little Bear&apos;s West ridge.
           </p>
           <p>
             I made it back to camp, packed up, and headed for the truck before

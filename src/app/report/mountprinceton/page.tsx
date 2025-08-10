@@ -165,7 +165,7 @@ export default function Page() {
             On the way back I ran into a guy that asked about the climb up
             Princeton. I mentioned that I was going to do Harvard and Columbia
             tomorrow. He mentioned that Roach lied about the ridgeline. I
-            decided that he had not really been that experienced with Roach's
+            decided that he had not really been that experienced with Roach&apos;s
             routes. All Roach mentions is that some routes are possible, not
             that they are marked. He was incessant about the fact that his
             friends, who he called &quot;Mountain Studs&quot;, could not find a

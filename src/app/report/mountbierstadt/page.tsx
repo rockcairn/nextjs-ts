@@ -39,8 +39,8 @@ export default function Page() {
           <h2 className="climbing-h2">Summary</h2>
           <p>
             <span className="climbing-h2">Mount Bierstadt</span> Elevation
-            14,065ft. (<span className="climbing-h2">Jul. 29, 2000</span>) "West
-            Slopes" trail
+            14,065ft. (<span className="climbing-h2">Jul. 29, 2000</span>) &quot;West
+            Slopes&quot; trail
             <br />
             After the previous years disappointment I decided to tackle another
             14er and won. I climbed this one with a few friends. I showed up at

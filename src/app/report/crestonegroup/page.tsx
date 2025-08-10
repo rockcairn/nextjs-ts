@@ -233,17 +233,17 @@ export default function Page() {
             attempt to climb Kit Carson as well this day. The Northwest route
             off of Crestone Peak was at one time the main route, but now no
             longer is. The route goes down a couloir and then does a long
-            traverse to the Northeast into &quot;Bear's Playground&quot;. We
+            traverse to the Northeast into &quot;Bear&apos;s Playground&quot;. We
             made it across and started climbing the slope up Columbia Point
             before the weather turned bad and we were forced to find shelter in
             a rock crevasse (the size of a phone booth) in the side of the
             ridgeline. There was thunder and lightening as well as sleet for
             about 45minutes, we then made a break for it. The lightening died
             down and we headed for a better shelter on the way back to
-            &quot;Bear's Playground&quot;.
+            &quot;Bear&apos;s Playground&quot;.
           </p>
           <p>
-            Next we headed through the rocky corpus between &quot;Bear's
+            Next we headed through the rocky corpus between &quot;Bear&apos;s
             Playground&quot; and the saddle with Humboldt, this short section of
             rock will become the bane of this trip. By the time we reached the
             saddle and could make the decision to go down to the South Colony
@@ -258,7 +258,7 @@ export default function Page() {
             <span className="climbing-h2">Sunday</span>
             <br />
             Sunday morning we woke up a little sore from the day before and
-            headed for, &quot;Bear's Playground.&quot; We ended up passing
+            headed for, &quot;Bear&apos;s Playground.&quot; We ended up passing
             through the upper part of South Colony Lakes just as the sun came up
             and bathed the Crestone group in an orange glow. We were able to
             enjoy this view for a while but had our eyes set on Kit Carson. We
@@ -269,9 +269,9 @@ export default function Page() {
             and then angle across the slope along a natural rock vein.
           </p>
           <p>
-            Once on top off Columbia Point's Eastern summit you head around the
+            Once on top off Columbia Point&apos;s Eastern summit you head around the
             left or South side along a good cairn path and then down a class 3
-            couloir right in the middle of Columbia Point's South face. The
+            couloir right in the middle of Columbia Point&apos;s South face. The
             climb down from Columbia Point and over to Kit Carson is the most
             difficult part of this days climb. The way back through this section
             was easier, but up climbing always is. during this traverse a number

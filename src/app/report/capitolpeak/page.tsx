@@ -37,7 +37,7 @@ export default function Page() {
           wildlife) harassing hikers?&quot;
         </li>
         <li>
-          &quot;Hey, cowboy did you drop something? I've been smelling it for
+          &quot;Hey, cowboy did you drop something? I&apos;ve been smelling it for
           the last 3 miles.&quot;
         </li>
         <li>
@@ -178,7 +178,7 @@ export default function Page() {
             (dog) that the place to be on a loose rock climb was in front of
             Hilda. Dogs have no sense of careful foot placement, and the hazards
             of showering people below with rock is not a thought that ever
-            crosses a dog's mind. All of this to say I made it up the saddle
+            crosses a dog&apos;s mind. All of this to say I made it up the saddle
             over loose rock before Hilda did. I do have to say that Hilda did
             better on this day then on the day that she did Harvard and
             Columbia.
@@ -210,7 +210,7 @@ export default function Page() {
             Hiking off of Castle we decided to go down the ridgeline and
             shoulder of castle, avoiding a descent back down the loose rock onto
             the snow field. It was a good choice to avoid the snow field, not
-            because we didn't want to glissade, but rather with people coming up
+            because we didn&apos;t want to glissade, but rather with people coming up
             that route we did not was to knock rock down onto them. On the way
             back we did however have a couple other chances to glissade.
           </p>

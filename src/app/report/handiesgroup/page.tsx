@@ -46,7 +46,7 @@ export default function Page() {
             Elevation Redcloud14,037ft. , Sunshine 14,006ft. , and Handies
             14,053ft. (<span className="climbing-h2">Sept. 21, 2002</span>)
             Redcloud and Sunshine were climbed from the, &quot;Silver Creek TH:
-            Redcloud's Northeast and South Ridges finishing with Sunshine's
+            Redcloud&apos;s Northeast and South Ridges finishing with Sunshine&apos;s
             North Slopes,&quot; this trail is a class 1 and 2, that runs (9.8
             miles rt. with 4,700ft. gain). Handies was climbed from the,
             &quot;American Basin TH: West Slopes,&quot; this trail is a class 1

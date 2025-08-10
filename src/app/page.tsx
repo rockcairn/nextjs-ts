@@ -150,7 +150,7 @@ export default function Home() {
             <section id="details" className="bg-white rounded-lg shadow p-6">
               <div className="climbing-text">
                 <p>
-                  Each new year and season comes with it's changes and as such, this domain has been replaformed yet again.
+                  Each new year and season comes with it&apos;s changes and as such, this domain has been replaformed yet again.
                 </p>
 
                 <ol className="climbing list-disc mb-4 pl-6">

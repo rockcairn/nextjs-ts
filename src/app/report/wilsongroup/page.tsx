@@ -44,7 +44,7 @@ export default function Page() {
             <span className="climbing-h2">July 12, 2003</span>) From Silver Pick
             TH I traveled up and over &quot;Rock of Ages&quot; pass and then
             ascended &quot;North Slopes&quot; trail on El Diente,
-            &quot;Ridgeline Traverse&quot; to Mount Wilson, down Mount Wilson's
+            &quot;Ridgeline Traverse&quot; to Mount Wilson, down Mount Wilson&apos;s
             &quot;North Slopes&quot; and back into Navajo Basin, &quot;West
             Ridge&quot; trail on Wilson Peak, back to TH. The whole combination
             included class1,2,3, and 4. I did the circuit in the opposite
@@ -183,10 +183,10 @@ export default function Page() {
           </p>
           <p>
             On the summit or Mount Wilson I met two people who managed to do a
-            high traverse from &quot;Rock of Ages&quot; mine to Mount Wilson.
+            high traverse from `&quot;`Rock of Ages&quot; mine to Mount Wilson.
             Taking their suggested route back seemed like an fair idea, however
             I later ran into some other hikers who advised against it. I came
-            off of Mount Wilson's north slope, stopped at a watering hole near
+            off of Mount Wilson`&apos;`s north slope, stopped at a watering hole near
             the end of a large snow field, filled up my camelback water batter
             (I brought a purifier), and dropped into Navajo basin. Actually
             descending into the basin and back up was not that difficult and the

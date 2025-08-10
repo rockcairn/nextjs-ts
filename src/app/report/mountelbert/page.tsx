@@ -31,7 +31,7 @@ export default function Page() {
         />
       </div>
       <span className="caption">
-        (Mount Elbert as seen from La Plata Peak. La Plata's Ellingwood Ridge is
+        (Mount Elbert as seen from La Plata Peak. La Plata&apos;s Ellingwood Ridge is
         in the foreground)
       </span>
 
@@ -40,7 +40,7 @@ export default function Page() {
           <h2 className="climbing-h2">Summary</h2>
           <p>
             <span className="climbing-h2">Mount Elbert </span>Elevation
-            14,440ft. (<span className="climbing-h2">Jul. 21, 2002</span>) "East
+            14,440ft. (<span className="climbing-h2">Jul. 21, 2002</span>) &quot;East
             Ridge&quot; trail from South Mount Elbert 4X4 TH. From this TH, this
             class 1 trail runs (7.6 miles rt. with 4,000ft. gain). TH directions
             are as follows, take 82 West 4 miles to Lake View campground sign,
@@ -141,8 +141,8 @@ export default function Page() {
             South of Leadville at the junction of 24/82 go west on 82 for 4
             miles to the Lake View campground turn off (you will turn to the
             right). On this road go about 1.25 miles, you will pass the
-            campground on your left at about 1.0 miles. You will reach the "Sure
-            Pretty Overlook" also known as the South Elbert TH (paved TH) at the
+            campground on your left at about 1.0 miles. You will reach the &quot;Sure
+            Pretty Overlook&quot; also known as the South Elbert TH (paved TH) at the
             1.25 mark. This parking lot is near a switchback. Just to the North
             of the parking lot is a dirt road that marks the beginning of the
             Elbert Trail, drive down this dirt road for 1.8 miles to reach the

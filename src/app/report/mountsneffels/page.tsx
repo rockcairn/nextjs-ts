@@ -115,7 +115,7 @@ export default function Page() {
           <p>
             The first part of the trip starts before you ever get out of your
             vehicle. The issue is where is the suggested parking lot that makes
-            the climb a legitimate 3,000ft. gain climb. Roach's book and the
+            the climb a legitimate 3,000ft. gain climb. Roach&apos;s book and the
             current maps of the jeep trails do not agree on any information.
             Also the 4X4 road goes across private property so camping any where
             close to the TH is not possible. I decided to spend the night at a

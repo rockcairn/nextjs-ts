@@ -59,7 +59,7 @@ export default function Page() {
             After climbing up the first thousand feet through the trees, the
             trail emerges above tree line and into a high mount basin. The trail
             continues across the basin to the other side where it turn to the
-            right and switchbacks up the Huron's North&nbsp; slope. Once you
+            right and switchbacks up the Huron&apos;s North&nbsp; slope. Once you
             reach the north ridge, at the top of the north slope, the trail
             reaches to top by going straight up to the top. The trail from the
             ridge to the top was in poor condition. The views from the top of

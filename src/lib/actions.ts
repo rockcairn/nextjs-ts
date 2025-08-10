@@ -47,7 +47,7 @@ function checkProductionRestrictions() {
   }
 }
 
-export async function createReport(prevState: State, formData: FormData, password: string) {
+export async function createReport(prevState: State, formData: FormData) {
 
   console.log("state: " + JSON.stringify(prevState));
   console.log("formData.keys " + JSON.stringify(formData.keys()));
@@ -111,7 +111,7 @@ export async function createReport(prevState: State, formData: FormData, passwor
   redirect('/peaks');
 }
 
-export async function updateReport(id: string, prevState: State, formData: FormData, password: string) {
+export async function updateReport(id: string, prevState: State, formData: FormData) {
 
     // Authenticate the user if necessary
   checkProductionRestrictions();
@@ -173,7 +173,7 @@ export async function updateReport(id: string, prevState: State, formData: FormD
   redirect('/peaks');
 }
 
-export async function deleteReport(id: string, password: string) {
+export async function deleteReport(id: string) {
     // Authenticate the user if necessary
   checkProductionRestrictions();
 

@@ -47,7 +47,7 @@ export default function Page() {
             that runs (13.5 miles rt. with 5,900ft. gain). I arrived at the TH
             around 8:30PM. Friday night and only 15 minutes before Tim arrived.
             As we were arranging places to sleep, Tim managed to get his (Ford)
-            truck stuck on a rock. I had to pull Tim's truck off of the rock
+            truck stuck on a rock. I had to pull Tim&apos;s truck off of the rock
             using my (Chevy) truck, I wish that I had taken&nbsp; a few pictures
             of this. The trail the next day was long and the traverse from
             Harvard to Columbia did not have a well defined path, however we
@@ -114,7 +114,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>7:00PM</td>
-                <td>-Margaritas at restaurant in Johnson's Village.</td>
+                <td>-Margaritas at restaurant in Johnson&apos;s Village.</td>
               </tr>
 
               <tr>
@@ -182,7 +182,7 @@ export default function Page() {
           </p>
           <p>
             After having enough fun on the trail we went to Coyote Cantina in
-            Johnson's Village at the junction of 285 and 24. We had a couple
+            Johnson&apos;s Village at the junction of 285 and 24. We had a couple
             drinks and some food before we parted ways; Tim went back to Denver
             and I when off to the Denny Creek TH for a climb of Yale on Sunday (
             <a className="climbing" href="/report/mountyale">

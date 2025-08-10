@@ -133,11 +133,11 @@ export default function Page() {
           <p>
             Before I even got to the trailhead, I was already getting poured on.
             I managed to get my rain gear on while in the truck and then headed
-            off down the trail. I couldn't waste anytime waiting for the rain to
+            off down the trail. I couldn&apos;t waste anytime waiting for the rain to
             let up because I knew that if I did I would be hiking in the dark
             before I made it to the lake. From the trailhead you go through
             three gates before you get into the wilderness area. The trail is in
-            pretty good condition and this time to Aspen I didn't have to
+            pretty good condition and this time to Aspen I didn&apos;t have to
             contend with cows (a reference to the Capitol Creek trail). During
             the first part of the hike you pass through a valley that has really
             large boulders scattered throughout it. The dense aspen trees and
@@ -149,7 +149,7 @@ export default function Page() {
             large rocks embedded into the creek bottom near the lake to creek
             exchange. The creek flows as a thin layer over the rock and down
             into the creek bed. It is amazing to think how different Snowmass
-            Lake would be without this rock, maybe there wouldn't even be a
+            Lake would be without this rock, maybe there wouldn&apos;t even be a
             lake. The power of this rock to hold back the entire like is
             incredible.
           </p>

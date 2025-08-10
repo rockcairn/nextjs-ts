@@ -73,7 +73,7 @@ export default function Page() {
                 </td>
                 <td width="10%">7:00PM</td>
                 <td width="80%">
-                  -left Tim's Place (I-70, Blackhawk, Nederland)
+                  -left Tim&apos;s Place (I-70, Blackhawk, Nederland)
                 </td>
               </tr>
 
@@ -156,8 +156,8 @@ export default function Page() {
             <li>Hikers not carrying any water.</li>
             <li>Hikers carrying plastic bags of gear instead of a backpack.</li>
             <li>
-              Hikers sleeping on the asphalt in the TH parking lot next to "No
-              camping in parking lot," signs.
+              Hikers sleeping on the asphalt in the TH parking lot next to &quot;No
+              camping in parking lot,&quot; signs.
             </li>
             <li>
               Hikers carrying water in a plastic bottle for a class three climb.
@@ -180,8 +180,8 @@ export default function Page() {
               little here)
             </li>
             <li>
-              Hikers taking there pets on the trail when it is posted, "No
-              Pets." Opps, I am part of that story.
+              Hikers taking there pets on the trail when it is posted, &quot;No
+              Pets.&quot; Opps, I am part of that story.
             </li>
           </ol>
          <p>&nbsp;</p>

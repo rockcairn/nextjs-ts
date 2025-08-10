@@ -40,7 +40,7 @@ export default function Page() {
           <p>
             <span className="climbing-h2">Mount Massive </span>Elevation
             14,428ft. (<span className="climbing-h2">Aug 11, 2001</span>)
-            "SouthWest Slopes" trail from north halfmoon creek TH I climbed this
+            &quot;SouthWest Slopes&quot; trail from north halfmoon creek TH I climbed this
             trail during a four day weekend. I arrived at the north halfmoon
             creek TH late Friday morning, rested and then climbed Mt. Massive
             Saturday morning. The trail that I choose was the shortest but by no

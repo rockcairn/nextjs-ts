@@ -39,7 +39,7 @@ export default function Page() {
           <h2 className="climbing-h2">Summary</h2>
           <p>
             <span className="climbing-h2">Quandary Peak </span>
-      Elevation 14,270ft. (<span className="climbing-h2">Jun. 30, 2002</span>) "East Slopes" trail 
+      Elevation 14,270ft. (<span className="climbing-h2">Jun. 30, 2002</span>) &quot;East Slopes&quot; trail 
       from Monte Cristo TH. Form the TH this classic className 1 route runs&nbsp; (5.4 miles round 
       trip with 3,370ft. gain). This trip was going to be car camping 
       adventure however with the forest fires this summer and my families time chare 
@@ -48,7 +48,7 @@ export default function Page() {
       guessing this saves the vegetation. Because the trail travels over more rock my 
       feet and stabilizer muscles got a little tired. see this trip page.</p> 
       <p><span className="climbing-h2">Grays and Torreys Peaks </span>Elevation
-      Grays 14,279ft. Torreys 14,272ft.  (<span className="climbing-h2">Jul. 1, 2002</span>) "East Slopes"
+      Grays 14,279ft. Torreys 14,272ft.  (<span className="climbing-h2">Jul. 1, 2002</span>) &quot;East Slopes&quot;
       trail combo from Horseshoe Basin TH. From the TH I climbed the East slopes
       trail with a slight variation. This class 2 with some class 3 trail runs (6.4
       miles rt. with 4,112ft. gain). The dirt road to the TH is not too bad however it
@@ -119,7 +119,7 @@ export default function Page() {
           intended route but the outcome was great views from the walk along the Northeast ridge passing the Lost Rat
           Couloir. The trail guide&nbsp; indicates to use the grassy East Slopes trial, however trail use shows many 
           people using a couloir on the north side of Horseshoe Basin to gain access to
-          Grays's Northeast Ridge.</td>
+          Grays&apos;s Northeast Ridge.</td>
       </tr>
       <tr>
         <td valign="top">&nbsp;</td>
