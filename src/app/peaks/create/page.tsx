@@ -4,7 +4,7 @@ import Breadcrumbs from '@/ui/peaks/breadcrumbs';
 import CreateReportForm from '@/ui/peaks/create-form';
  
 export const metadata: Metadata = {
-  title: 'Create Report',
+  title: 'RockCairn.com - Create Report',
 };
 
 export default async function Page() {

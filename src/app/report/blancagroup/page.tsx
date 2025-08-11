@@ -1,6 +1,14 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Blanca Group',
+  keywords: [
+    'Mount Lindsey', 'Blanca Peak', 'Ellingwood Point', 'Little Bear Peak', 'Sangre de Cristo Range',
+  ],
+};
 
 export default function Page() {
   return (

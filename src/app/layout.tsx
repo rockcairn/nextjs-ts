@@ -1,23 +1,17 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import SideNav from "./sidenav";
-import Footer from "./footer";
+import { Geist, Geist_Mono } from 'next/font/google';
+import Footer from './footer';
+import './globals.css';
+import SideNav from './sidenav';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
-
-export const metadata: Metadata = {
-  title: "RockCairn as a Next App",
-  description: "RockCairn website as a Next App",
-};
 
 export default function RootLayout({
   children,
@@ -33,8 +27,10 @@ export default function RootLayout({
           <div className="w-full flex-none md:w-64">
             <SideNav />
           </div>
-          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}<Footer /></div>
-          
+          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

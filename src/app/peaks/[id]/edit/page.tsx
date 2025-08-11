@@ -8,7 +8,7 @@ import { fetchReportById } from '@/lib/data';
 import { formatDateToLocal } from '@/utils/utils';
  
 export const metadata: Metadata = {
-  title: 'Edit Report',
+  title: 'RockCairn.com - Edit Report',
 };
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
