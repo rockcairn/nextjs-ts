@@ -14,7 +14,7 @@ export default function VoteButton() {
 
   return (
     <div>
-        <h3>Number of Votes: [{votes}]</h3>
+        <h3 className="climbing-h3">Number of Votes: [{votes}]</h3>
         <div className="mt-6 flex gap-4">
           <button 
           onClick={upVote}
