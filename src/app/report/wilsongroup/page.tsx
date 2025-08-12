@@ -1,6 +1,14 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Wilson Grpup',
+  keywords: [
+    'Mount Wilson', 'Wilson Peak', 'El Diente Peak', 'San Juan Range',
+  ],
+};
 
 export default function Page() {
   return (

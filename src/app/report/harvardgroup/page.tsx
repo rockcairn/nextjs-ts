@@ -1,6 +1,14 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Harvard Group',
+  keywords: [
+    'Harvard Group' ,'Mount Harvard', 'Mount Columbia', 'Sawatch Range',
+  ],
+};
 
 export default function Page() {
   return (

@@ -1,6 +1,14 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Mpount of the Holy Cross',
+  keywords: [
+    'Mount of the Holy Cross', 'Sawatch Range',
+  ],
+};
 
 export default function Page() {
   return (

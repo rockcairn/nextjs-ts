@@ -1,6 +1,14 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Handies Group',
+  keywords: [
+    'Lincoln Group','Mount Democrat', 'Mount Lincoln', 'Mount Bross', 'Tenmile Range',
+  ],
+};
 
 export default function Page() {
   return (

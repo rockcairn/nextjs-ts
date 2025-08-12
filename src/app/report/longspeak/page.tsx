@@ -1,6 +1,14 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Longs Peak',
+  keywords: [
+    'Longs Peak', 'Front Range',
+  ],
+};
 
 export default function Page() {
   return (

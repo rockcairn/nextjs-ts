@@ -1,6 +1,21 @@
 import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - Crestone Group',
+  keywords: [
+    'Crestone Group',
+    'Humboldt Peak',
+    'Crestone Peak',
+    'Crestone Needle',
+    'Kit Carson',
+    'Challenger Point',
+    'Columbia Point',
+    'Sangre de Cristo Range',
+  ],
+};
 
 export default function Page() {
   return (
@@ -233,8 +248,8 @@ export default function Page() {
             attempt to climb Kit Carson as well this day. The Northwest route
             off of Crestone Peak was at one time the main route, but now no
             longer is. The route goes down a couloir and then does a long
-            traverse to the Northeast into &quot;Bear&apos;s Playground&quot;. We
-            made it across and started climbing the slope up Columbia Point
+            traverse to the Northeast into &quot;Bear&apos;s Playground&quot;.
+            We made it across and started climbing the slope up Columbia Point
             before the weather turned bad and we were forced to find shelter in
             a rock crevasse (the size of a phone booth) in the side of the
             ridgeline. There was thunder and lightening as well as sleet for
@@ -269,21 +284,21 @@ export default function Page() {
             and then angle across the slope along a natural rock vein.
           </p>
           <p>
-            Once on top off Columbia Point&apos;s Eastern summit you head around the
-            left or South side along a good cairn path and then down a class 3
-            couloir right in the middle of Columbia Point&apos;s South face. The
-            climb down from Columbia Point and over to Kit Carson is the most
-            difficult part of this days climb. The way back through this section
-            was easier, but up climbing always is. during this traverse a number
-            of climbers where starting to clog the path. The summit of Kit
-            Carson is rather small but getting up to it is not that difficult,
-            just a little loose rock to deal with. We stayed on the summit for
-            just a little bit, got directions to Challenger Point and headed
-            down and over. The trail between the two summits is cool, there is a
-            walk way that is cut perfectly out of the side of Kit Carson. With
-            the large amount of activity on these peak this day we had to be
-            aware of where other climbers were, and try to avoid knocking any
-            loose rocks down the slope below us.
+            Once on top off Columbia Point&apos;s Eastern summit you head around
+            the left or South side along a good cairn path and then down a class
+            3 couloir right in the middle of Columbia Point&apos;s South face.
+            The climb down from Columbia Point and over to Kit Carson is the
+            most difficult part of this days climb. The way back through this
+            section was easier, but up climbing always is. during this traverse
+            a number of climbers where starting to clog the path. The summit of
+            Kit Carson is rather small but getting up to it is not that
+            difficult, just a little loose rock to deal with. We stayed on the
+            summit for just a little bit, got directions to Challenger Point and
+            headed down and over. The trail between the two summits is cool,
+            there is a walk way that is cut perfectly out of the side of Kit
+            Carson. With the large amount of activity on these peak this day we
+            had to be aware of where other climbers were, and try to avoid
+            knocking any loose rocks down the slope below us.
           </p>
           <p>
             Most of the people that we ran into on Kit Carson had climbed up for
