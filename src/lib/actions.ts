@@ -87,8 +87,8 @@ export async function createReport(prevState: State, formData: FormData) {
       name: name,
       height: height,
       range: range,
-      domain: 'http://www.rockcairn.com/', 
-      relative_path: `mountain/${page}.php`,
+      domain: '/',
+      relative_path: `report/${page}`,
       description: 'Summit Report.',
       keywords: name,
       report_date: reportDate,
@@ -145,11 +145,11 @@ export async function updateReport(id: string, prevState: State, formData: FormD
   try {
     await dbconnection('peaks')
       .update({
-        name: name,
+      name: name,
       height: height,
       range: range,
-      domain: 'http://www.rockcairn.com/', 
-      relative_path: `mountain/${page}.php`,
+      domain: '/', 
+      relative_path: `report/${page}`,
       description: 'Summit Report.',
       keywords: name,
       report_date: reportDate,
