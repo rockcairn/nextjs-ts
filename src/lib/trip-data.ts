@@ -1,17 +1,17 @@
 import knex from 'knex';
-import { Peak } from './types';
+import { Trip } from './types';
 import config from '../../knexfile';
 
 const env = process.env.NODE_ENV || 'development';
 const dbconnection = knex(config[env]);
 
-export async function fetchReports(): Promise<Peak[]> {
+export async function fetchReports(): Promise<Trip[]> {
   try {
-    const peaks: Peak[] = await dbconnection.select('*').from('peaks').orderBy('height', 'desc');
-    return peaks;
+    const trips: Trip[] = await dbconnection.select('*').from('trips').orderBy('report_date', 'desc');
+    return trips;
   } catch (error) {
     console.error('Database Error:', error);
-    throw new Error('Failed to fetch peaks.');
+    throw new Error('Failed to fetch trips.');
   }
 }
 
@@ -22,12 +22,12 @@ export async function fetchPaginatedReports(currentPage: number) {
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
   
   try {
-    const peaks: Peak[] = await dbconnection.select('*')
-      .from('peaks')
-      .orderBy('id', 'desc')
+    const trips: Trip[] = await dbconnection.select('*')
+      .from('trips')
+      .orderBy('report_date', 'desc')
       .limit(ITEMS_PER_PAGE)
       .offset(offset);
-    return peaks;
+    return trips;
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch reports.');
@@ -50,8 +50,8 @@ export async function fetchReportPages() {
 // Fetch a single report by ID
 export async function fetchReportById(id: string) {
   try {
-    const peak: Peak = await dbconnection.select('*').from('peaks').where({id: parseInt(id)}).first();
-    return peak;
+    const trip: Trip = await dbconnection.select('*').from('trips').where({id: parseInt(id)}).first();
+    return trip;
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch invoice.');

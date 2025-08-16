@@ -1,6 +1,6 @@
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { deleteReport } from '@/lib/actions';
+import { deleteReport } from '@/lib/peak-actions';
 
 export function CreateReport() {
   return (

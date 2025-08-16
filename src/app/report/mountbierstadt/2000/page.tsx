@@ -5,9 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'RockCairn.com - Mount Bierstadt',
-  keywords: [
-    'Mount Bierstadt', 'Front Range',
-  ],
+  keywords: ['Mount Bierstadt', 'Front Range'],
 };
 
 export default function Page() {
@@ -25,6 +23,14 @@ export default function Page() {
             href="../peaks?search=Front"
           >
             Front Range
+          </Link>
+        </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2020"
+          >
+            2020 Report
           </Link>
         </li>
       </ul>
@@ -47,8 +53,8 @@ export default function Page() {
           <h2 className="climbing-h2">Summary</h2>
           <p>
             <span className="climbing-h2">Mount Bierstadt</span> Elevation
-            14,065ft. (<span className="climbing-h2">Jul. 29, 2000</span>) &quot;West
-            Slopes&quot; trail
+            14,065ft. (<span className="climbing-h2">Jul. 29, 2000</span>)
+            &quot;West Slopes&quot; trail
             <br />
             After the previous years disappointment I decided to tackle another
             14er and won. I climbed this one with a few friends. I showed up at

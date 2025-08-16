@@ -1,4 +1,4 @@
-import { fetchReports } from '@/lib/data';
+import { fetchReports } from '@/lib/peak-data';
 import { Peak } from '@/lib/types';
 import { formatBoolean, formatCombo, formatDateToLocal } from '@/utils/utils';
 import Link from 'next/link';

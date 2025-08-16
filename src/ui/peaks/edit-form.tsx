@@ -1,7 +1,7 @@
 'use client';
 
-import { State, updateReport } from '@/lib/actions';
-import { ReportForm } from '@/lib/types';
+import { State, updateReport } from '@/lib/peak-actions';
+import { PeakReportForm } from '@/lib/types';
 import { formatDateAsISO } from '@/utils/utils';
 import Link from 'next/link';
 import { useActionState } from 'react';
@@ -10,7 +10,7 @@ import { Button } from '../button';
 export default function EditReportForm({
   peak,
 }: {
-  peak: ReportForm;
+  peak: PeakReportForm;
 }) {
 
   const updateInvoiceWithId = updateReport.bind(null, peak.id.toString());

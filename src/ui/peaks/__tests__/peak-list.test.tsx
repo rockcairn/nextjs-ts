@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from 'vitest';
 import PeakList from "@/ui/peaks/peak-list";
 
 // Mock external dependencies
-vi.mock('@/lib/data', () => ({
+vi.mock('@/lib/peak-data', () => ({
   fetchReports: vi.fn(async () => [
     {
       id: 1,

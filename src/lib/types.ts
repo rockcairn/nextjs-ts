@@ -16,7 +16,7 @@ export type Peak = {
   combo: boolean;
 };
 
-export type ReportForm = {
+export type PeakReportForm = {
   id: number;
   name: string;
   height: number;
@@ -32,10 +32,17 @@ export type ReportForm = {
 
 export type Trip = {
   id: number;
-  date: string;
   location: string;
-  summary: string;
   domain: string;
   relative_path: string;
+  summary: string;
   keywords: string;
+  report_date: string;
+};
+
+export type TripReportForm = {
+  id: number;
+  location: string;
+  summary: string;
+  report_date: string;
 };

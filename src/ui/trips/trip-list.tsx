@@ -2,20 +2,11 @@ import { Trip } from '@/lib/types';
 import { formatDateToLocal } from '@/utils/utils';
 import Link from 'next/link';
 import { DeleteReport, UpdateReport } from './buttons';
+import { fetchReports } from '@/lib/trip-data';
 
 export default async function TripList() {
-  // const peaks: Peak[] = await fetchReports();
-  const trips: Trip[] = [
-    {
-      id: 0,
-      date: '2023-10-01',
-      location: 'Rocky Mountain National Park',
-      summary: 'A beautiful day hiking in the park.',
-      domain: '/',
-      relative_path: '/report/rockymountain',
-      keywords: 'rocky mountain, hiking, national park',
-    },
-  ];
+  const trips: Trip[] = await fetchReports();
+
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
@@ -45,7 +36,7 @@ export default async function TripList() {
                     className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg"
                   >
                     <td className="whitespace-nowrap px-3 py-3">
-                      {formatDateToLocal(trip.date)}
+                      {formatDateToLocal(trip.report_date)}
                     </td>
                     <td className="whitespace-nowrap py-3 pl-6 pr-3">
                       <div className="flex items-center gap-3">

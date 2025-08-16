@@ -1,6 +1,6 @@
+import { CreateReport } from "@/ui/trips/buttons";
 import TripList from "@/ui/trips/trip-list";
 import { Metadata } from "next";
-import { NotImplementedButton } from "../not-implemented";
 
 export const metadata: Metadata = {
   title: 'RockCairn.com - Trips',
@@ -34,7 +34,7 @@ export default function Page() {
       </div>
       <div className="mt-4 flex justify-end items-center justify-between gap-2 md:mt-8">
         {/* <Search placeholder="Search invoices..." /> */}
-        <NotImplementedButton label="Create Trip" />
+         <CreateReport />
         </div>
         <TripList/>
     </div>

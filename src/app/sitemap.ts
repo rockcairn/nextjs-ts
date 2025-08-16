@@ -130,7 +130,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: 'https://rockcairn.com/report/mountbierstadt',
+      url: 'https://rockcairn.com/report/mountbierstadt/2000',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://rockcairn.com/report/mountbierstadt/2020',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,

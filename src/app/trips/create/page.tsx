@@ -1,7 +1,7 @@
 
 import { Metadata } from 'next';
+import CreateReportForm from '@/ui/trips/create-form';
 import Breadcrumbs from '@/utils/breadcrumbs';
-import CreateReportForm from '@/ui/peaks/create-form';
  
 export const metadata: Metadata = {
   title: 'RockCairn.com - Create Report',
@@ -12,10 +12,10 @@ export default async function Page() {
     <main>
       <Breadcrumbs
         breadcrumbs={[
-          { label: 'Peaks', href: '/peaks' },
+          { label: 'Trips', href: '/trips' },
           {
             label: 'Create Report',
-            href: '/peaks/create',
+            href: '/trips/create',
             active: true,
           },
         ]}

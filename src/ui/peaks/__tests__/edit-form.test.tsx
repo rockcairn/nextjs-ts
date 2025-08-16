@@ -18,7 +18,7 @@ vi.mock('react', async () => {
   };
 });
 
-describe('<CreateReportForm />', () => {
+describe('<EditReportForm />', () => {
   const testPeak = {
     peak: {
       id: 1,
@@ -64,7 +64,7 @@ describe('<CreateReportForm />', () => {
     // Check textboxes
     expect(screen.getByRole('textbox', { name: /Peak Name/i })).toHaveProperty('value' , testPeak.peak.name);
     expect(screen.getAllByAltText(/peak height/i)[0]).toHaveProperty('value', testPeak.peak.height.toString());
-    expect(screen.getByRole('textbox', { name: /Mountain Range/i })).toHaveProperty('value', 'test range');
+    expect(screen.getByRole('textbox', { name: /Mountain Range/i })).toHaveProperty('value', testPeak.peak.range);
     expect(screen.getByRole('textbox', { name: /Report Date/i })).toHaveProperty('value', formatDateAsISO(testPeak.peak.report_date));
     expect(screen.getByRole('textbox', { name: /Difficulty or Class/i })).toHaveProperty('value', testPeak.peak.class);
     expect(screen.getByRole('textbox', { name: /Roundtrip in Miles/i })).toHaveProperty('value', testPeak.peak.roundtrip_miles);
