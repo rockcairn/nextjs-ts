@@ -81,7 +81,7 @@ export async function createReport(prevState: State, formData: FormData) {
   }
   const { name, height, range, reportDate, difficulty, roundtripMiles, elevationGain, roundtripDuration, solo, combo } = validatedFields.data;
 
-  const page = name.replace(/ |,/g, "_");
+  const page = name.replace(/ |,/g, "-");
   try {
     await dbconnection('peaks').insert({
       name: name,
@@ -140,7 +140,7 @@ export async function updateReport(id: string, prevState: State, formData: FormD
   }
   const { name, height, range, reportDate, difficulty, roundtripMiles, elevationGain, roundtripDuration, solo, combo } = validatedFields.data;
 
-  const page = name.replace(/ |,/g, "_");
+  const page = name.replace(/ |,/g, "-");
 
   try {
     await dbconnection('peaks')

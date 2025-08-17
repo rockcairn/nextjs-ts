@@ -60,7 +60,7 @@ export async function createReport(prevState: State, formData: FormData) {
   }
   const { reportDate, location, summary  } = validatedFields.data;
 
-  const page = location.replace(/ |,/g, "_");
+  const page = location.replace(/ |,/g, "-");
   try {
     await dbconnection('trips').insert({
       location: location,
@@ -104,7 +104,7 @@ export async function updateReport(id: string, prevState: State, formData: FormD
   }
   const { location, summary, reportDate } = validatedFields.data;
 
-  const page = location.replace(/ |,/g, "_");
+  const page = location.replace(/ |,/g, "-");
 
   try {
     await dbconnection('trips')
