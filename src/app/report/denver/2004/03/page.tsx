@@ -118,7 +118,7 @@ export default function Page() {
               <tr>
                 <td className="climbing-table-titles">Thursday</td>
                 <td>6:00PM</td>
-                <td>-Engagement party at Rod and Sue Penner's</td>
+                <td>-Engagement party at Rod and Sue Penner&apos;s</td>
               </tr>
 
               <tr>

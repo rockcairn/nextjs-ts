@@ -59,7 +59,7 @@ export default function Page() {
           <h2 className="climbing-h2">Summary</h2>
           <p>
             <span className="climbing-h2">Grays Peaks </span>Elevation 14,279ft.
-            (<span className="climbing-h2">Jul. 2, 2006</span>) "East Slopes"
+            (<span className="climbing-h2">Jul. 2, 2006</span>) &quot;East Slopes&quot;
             trail combo from Horseshoe Basin TH. From the TH I climbed the East
             slopes trail with a slight variation. This class 2 with some class 3
             trail runs (6.4 miles rt. with 4,112ft. gain). The dirt road to the
@@ -105,7 +105,7 @@ export default function Page() {
                   -arrive at the Summit of Grays via the genital but steep East
                   slopes route. After having taken a bad route up to the North
                   East Ridge from Grays Lake on a previous trip this time I
-                  stayed to the unmarked but safer route up to Grays's East
+                  stayed to the unmarked but safer route up to Grays&apos;s East
                   Slope located to the left or West of Grays Lake.
                 </td>
               </tr>

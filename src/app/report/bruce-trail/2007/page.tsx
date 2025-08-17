@@ -51,7 +51,7 @@ export default function Page() {
           priority
         />
       </div>
-      <span className="caption">(Devil's Pulpit Area)</span>
+      <span className="caption">(Devil&apos;s Pulpit Area)</span>
 
       <article className="climbing-text">
         <section id="summary">
@@ -61,7 +61,7 @@ export default function Page() {
         </section>
         <section id="timeline">
           <article className="climbing-timeline">
-            <h2 className="climbing-h2">Ball's Falls (Niagara Region)</h2>
+            <h2 className="climbing-h2">Ball&apos;s Falls (Niagara Region)</h2>
             <table className="climbing" width="100%">
               <tbody>
                 <tr>
@@ -72,7 +72,7 @@ export default function Page() {
                     August 5
                   </td>
                   <td width="80%" height="19">
-                    -Ball's Falls Conservation Area. Historic mills harnessing
+                    -Ball&apos;s Falls Conservation Area. Historic mills harnessing
                     the power of the falls. It would seem that you should think
                     about checking out this area in the Spring if you wish to
                     see water going over the falls.
@@ -379,7 +379,7 @@ export default function Page() {
                   </td>
                   <td width="80%" height="19">
                     -Drive to Limehouse and did the circuit twice. An old kiln
-                    is being restored in this area. Also the "Hole in the wall"
+                    is being restored in this area. Also the &quot;Hole in the wall&quot;
                     which requires climbing down a ladder it in this area.
                   </td>
                 </tr>

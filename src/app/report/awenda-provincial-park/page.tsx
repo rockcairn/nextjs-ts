@@ -103,7 +103,7 @@ export default function Page() {
               <tr>
                 <td height="19">&nbsp;</td>
                 <td height="19">12:30PM</td>
-                <td height="19">-Lunch at Iac Kettle's Lake.</td>
+                <td height="19">-Lunch at Iac Kettle&apos;s Lake.</td>
               </tr>
 
               <tr>

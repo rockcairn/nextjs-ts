@@ -70,7 +70,7 @@ export default function Page() {
                 </td>
                 <td>12/13/2003</td>
                 <td>8:00PM</td>
-                <td>-Play, "Santa's Big Red Sack"</td>
+                <td>-Play, &quot;Santa&apos;s Big Red Sack&quot;</td>
               </tr>
 
               <tr>
@@ -170,7 +170,7 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>6:30PM</td>
-                <td>-Dinner at Pug Ryan's, Pub and Steak House.</td>
+                <td>-Dinner at Pug Ryan&apos;s, Pub and Steak House.</td>
               </tr>
 
               <tr>

@@ -148,7 +148,7 @@ export default function Page() {
                 <td height="19">&nbsp;</td>
                 <td height="19">6:30PM</td>
                 <td height="19">
-                  -New Year's Eve part at the Hol-Ha dining room.
+                  -New Year&apos;s Eve part at the Hol-Ha dining room.
                 </td>
               </tr>
 

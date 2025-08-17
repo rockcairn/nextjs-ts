@@ -77,7 +77,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>7:00PM</td>
-                <td>-Dinner at Gabriel's in Sedalia.</td>
+                <td>-Dinner at Gabriel&apos;s in Sedalia.</td>
               </tr>
 
               <tr>

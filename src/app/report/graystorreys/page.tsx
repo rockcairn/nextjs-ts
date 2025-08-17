@@ -62,8 +62,8 @@ export default function Page() {
           <p>
             <span className="climbing-h2">Grays and Torreys Peaks </span>
             Elevation Grays 14,279ft. Torreys 14,272ft. (
-            <span className="climbing-h2">Jul. 9, 2013</span>) "Stevens Gulch
-            Trailhead" trail combo reached via bakerville exit I-70. From the TH
+            <span className="climbing-h2">Jul. 9, 2013</span>) &quot;Stevens Gulch
+            Trailhead&quot; trail combo reached via bakerville exit I-70. From the TH
             I climbed the standard route up the valley and onto the North East
             ridge line of Grays. After summiting Grays, I proceeded across the
             connecting ridge line to Torreys. After summiting Torreys, I caught
