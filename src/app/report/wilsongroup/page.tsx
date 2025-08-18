@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RockCairn.com - Wilson Grpup',
+  title: 'RockCairn.com - Wilson Group',
   keywords: [
     'Mount Wilson', 'Wilson Peak', 'El Diente Peak', 'San Juan Range',
   ],
@@ -25,6 +25,14 @@ export default function Page() {
             href="../peaks?search=San%20Juan"
           >
             San Juan Range
+          </Link>
+        </li>
+         <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="wilsonpeak"
+          >
+            2004 Report
           </Link>
         </li>
       </ul>

@@ -27,6 +27,14 @@ export default function Page() {
             San Juan Range
           </Link>
         </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2004"
+          >
+            2004 Report
+          </Link>
+        </li>
       </ul>
       <div>
         <Image
@@ -81,7 +89,7 @@ export default function Page() {
                 <td width="10%">3:30PM</td>
                 <td width="80%">
                   -Arrive in Ouray.{' '}
-                  <a className="climbing" href="sanluispeak">
+                  <a className="climbing" href="../sanluispeak">
                     Earlier in the day&nbsp; I climbed San Luis Peak.
                   </a>
                 </td>

@@ -27,6 +27,14 @@ export default function Page() {
             Tenmile Range
           </Link>
         </li>
+         <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2004"
+          >
+            2004 Report
+          </Link>
+        </li>
       </ul>
       <div>
         <Image
@@ -97,7 +105,7 @@ export default function Page() {
                 </td>
                 <td width="80%" height="21">
                   -leave Kite lake TH after climbing the{' '}
-                  <a className="climbing" href="lincolngroup">
+                  <a className="climbing" href="../lincolngroup">
                     Lincoln Group
                   </a>
                   .

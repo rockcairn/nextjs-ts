@@ -27,6 +27,14 @@ export default function Page() {
             Front Range
           </Link>
         </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2002"
+          >
+            2002 Report
+          </Link>
+        </li>
       </ul>
       <div>
         <Image
@@ -80,49 +88,37 @@ export default function Page() {
                 <td width="10%" className="climbing-table-titles">
                   Saturday
                 </td>
-
                 <td width="10%">6:55AM</td>
-
                 <td width="80%">-left Echo Lake TH.</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>9:35AM</td>
-
                 <td>-reached the Summit Lake Shelter.</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>10:30AM</td>
-
                 <td>-summit Mount Evans.</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>12:00PM</td>
-
                 <td>-summit Mount Spalding.</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>12:30PM</td>
-
                 <td>-back at the Summit lake saddle..</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>2:55PM</td>
-
                 <td>-back at Echo Lake TH.</td>
               </tr>
             </tbody>
@@ -148,7 +144,9 @@ export default function Page() {
             lot was full of tourist and those that drove up the mountain. From
             the parking lot there is a short hike to the summit which uses some
             rather long switch backs which are bike-able as well, check out my{' '}
-            <NotImplemented label="2002 mountain bike climb" />.
+            <a className="climbing" href="2002">
+              2002 mountain bike climb{' '}
+            </a>
           </p>
 
           <p>

@@ -16,7 +16,7 @@ export default function Page() {
       <ul className="climbing-report-nav">
         <li>
           <h1 className="climbing-report-title">
-            Mount Princeton - Buena Vista Trip
+            Mount Princeton - Buena Vista Trip 2002
           </h1>
         </li>
         <li className="climbing-report-range">
@@ -25,6 +25,14 @@ export default function Page() {
             href="../peaks?search=Sawatch"
           >
             Sawatch Range
+          </Link>
+        </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2025"
+          >
+            2025 Report
           </Link>
         </li>
       </ul>
@@ -111,7 +119,7 @@ export default function Page() {
                 <td>5:30AM</td>
                 <td>
                   -
-                  <a className="climbing" href="harvardgroup">
+                  <a className="climbing" href="../harvardgroup">
                     see Harvard Group climb
                   </a>
                 </td>
@@ -122,7 +130,7 @@ export default function Page() {
                 <td>5:30AM</td>
                 <td>
                   -
-                  <a className="climbing" href="mountyale">
+                  <a className="climbing" href="../mountyale">
                     see Mount Yale climb
                   </a>
                 </td>

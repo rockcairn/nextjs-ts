@@ -112,7 +112,7 @@ export default function Page() {
                 <td>12:00PM</td>
                 <td>
                   -leave Stewart Creek Trailhead and{' '}
-                  <a className="climbing" href="mountsneffels">
+                  <a className="climbing" href="mountsneffels/2003">
                     drive to Ouray
                   </a>
                   .

@@ -185,7 +185,7 @@ exports.seed = async function (knex) {
         .select('id')
         .where({ latitude: 37.5825, longitude: -105.4925 }),
     })
-    .where({ name: 'Ellingwood Point' });
+    .where({ name: 'Ellingwood Peak' });
 
   await knex('peaks')
     .update({
@@ -273,7 +273,7 @@ exports.seed = async function (knex) {
         .select('id')
         .where({ latitude: 37.912998, longitude: -107.504402 }),
     })
-    .where({ name: 'Handies  Peak' });
+    .where({ name: 'Handies Peak' });
 
   await knex('peaks')
     .update({

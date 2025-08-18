@@ -27,6 +27,14 @@ export default function Page() {
             San Juan Range
           </Link>
         </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="uncompahgrepeak"
+          >
+            2004 Report
+          </Link>
+        </li>
       </ul>
       <div>
         <Image

@@ -83,7 +83,7 @@ export default function Page() {
                 <td width="10%">2:45PM</td>
                 <td width="80%">
                   -
-                  <a className="climbing" href="/report/mountprinceton">
+                  <a className="climbing" href="/report/mountprinceton/2002">
                     see Mount Princeton climb
                   </a>
                 </td>

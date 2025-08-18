@@ -144,7 +144,7 @@ export default function Page() {
                 <td>9:15AM</td>
                 <td>
                   -off to{' '}
-                  <a className="climbing" href="mountsherman">
+                  <a className="climbing" href="mountsherman/2002">
                     Mount Sherman.
                   </a>
                 </td>

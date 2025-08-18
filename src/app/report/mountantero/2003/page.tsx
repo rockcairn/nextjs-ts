@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RockCairn.com - Mopunt Antero',
+  title: 'RockCairn.com - Mount Antero',
   keywords: [
     'Mount Antero', 'Sawatch Range',
   ],
@@ -25,6 +25,14 @@ export default function Page() {
             href="../peaks?search=Sawatch"
           >
             Sawatch Range
+          </Link>
+        </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2004"
+          >
+            2004 Report
           </Link>
         </li>
       </ul>
@@ -80,7 +88,7 @@ export default function Page() {
 
                 <td width="80%">
                   -
-                  <a href="shavanogroup" className="climbing">
+                  <a href="../shavanogroup" className="climbing">
                     Climb Mount Shavano and Tabeguache Peak
                   </a>
                 </td>

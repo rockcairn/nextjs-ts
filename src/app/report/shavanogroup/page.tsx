@@ -143,7 +143,7 @@ export default function Page() {
 
                 <td>
                   -drive to{' '}
-                  <a className="climbing" href="mountantero">
+                  <a className="climbing" href="mountantero/2003">
                     Baldwin Gulch 4X4 TH
                   </a>
                 </td>
@@ -197,7 +197,7 @@ export default function Page() {
             forest that shows the signs of avalanches and glacier like activity.
             Back at the trailhead and camp I rested a little bit before making
             plans to break camp and move over to the Antero TH.{' '}
-            <a className="climbing" href="mountantero">
+            <a className="climbing" href="mountantero/2003">
               Antero Report
             </a>
           </p>
