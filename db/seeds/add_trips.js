@@ -17,7 +17,7 @@ exports.seed = async function(knex) {
     {location: 'Tucson, AZ', domain: '/',relative_path: 'report/tucson-arizona', summary: 'Denver, CO stop over, Penny\'s Wedding, Saguara Cactus, Agava Succulants, desert warmth.', report_date: '2007-03-21 22:21:18'},
     {location: 'Awenda Provincial Park, Ontario', domain: '/',relative_path: 'report/awenda-provincial-park', summary: 'Geogian Bay, Lake Beaches, Camping, Acorns.', report_date: '2006-09-08 22:21:18'},
     {location: 'Poncha Springs, Colorado', domain: '/',relative_path: 'report/monarch-colorado', summary: 'Colorado Trail, Angel of Shavano campground, Cotton Wood Hot Springs.', report_date: '2006-08-16 22:21:18'},
-    {location: 'Las Vegas, Nevada', domain: '/',relative_path: 'report/las_vegas-nevada', summary: 'Mandalay Bay Report Hotel, Zomanity, the beach, House or Blues.', report_date: '2006-04-16 22:21:18'},
+    {location: 'Las Vegas, Nevada', domain: '/',relative_path: 'report/las-vegas-nevada', summary: 'Mandalay Bay Report Hotel, Zomanity, the beach, House or Blues.', report_date: '2006-04-16 22:21:18'},
     {location: 'Akumal, Mexico', domain: '/',relative_path: 'report/cancun/2006', summary: 'Akumal Caribe Hotel, Chitza Itza, Ek Balam, Coba, Turtle Bay Lagoon, Xe-Ha.', report_date: '2005-12-28 22:21:18'},
     {location: 'New York City', domain: '/',relative_path: 'report/new_york_city-nov-2005', summary: 'Wedding Anniversary Trip, MoMA, Brooklyn Bridge, Central Park, Staten Island Ferry.', report_date: '2005-11-03 22:21:18'},
     {location: 'Loma, CO', domain: '/',relative_path: 'report/loma-colorado', summary: 'Highline State Park, Colorado River Loma Put-in, Colorado River Westwater Take-out, Canoe Trip.', report_date: '2005-07-09 22:21:18'},
@@ -51,7 +51,7 @@ exports.seed = async function(knex) {
     {location: 'Montreal, Quebec', domain: '/',relative_path: 'report/montreal-2012', summary: 'Montreal Grand Prix UCI Cycle Event, Charleston Lake Provincial Park.', report_date: '2012-09-07 22:21:18'},
     {location: 'Grays and Torreys Peaks', domain: '/', relative_path: 'report/graystorreys', summary: 'Summit Climb of Grays and Torreys Peaks.', report_date: '2013-07-09 22:21:18'},
     {location: 'Walt Disney World', domain: '/',relative_path: 'report/walt-disney-world-2013', summary: 'Walt Disney World, Orlando Florida, All-Star Movie Resort, Downtown Disney.', report_date: '2013-06-30 22:21:18'},
-    {location: 'Glenwood Springs, Colorado', domain: '/',relative_path: 'report/glenwood-springs-2013', summary: 'Glenwood Springs, Colorado, The Hotel Colorado, Glenwood Springs Hot Springs, Glenwood Cayon Biking, Independence Pass Drive.', report_date: '2013-07-10 22:21:18'},
+    {location: 'Glenwood Springs, Colorado', domain: '/',relative_path: 'report/glenwood-springs', summary: 'Glenwood Springs, Colorado, The Hotel Colorado, Glenwood Springs Hot Springs, Glenwood Cayon Biking, Independence Pass Drive.', report_date: '2013-07-10 22:21:18'},
     {location: 'Denver, Colorado', domain: '/',relative_path: 'report/denver/2013/07', summary: 'Denver Colorado, Train Museum, City Park Paddle Boats, Playgrounds and Parks.', report_date: '2013-07-04 22:21:18'},
     {location: 'Mount Bierstadt', domain: '/', relative_path: 'report/mountbierstadt/2020', summary: 'Mount Bierstadt - Georgetown Day Trip 2020.', report_date: '2020-08-03 09:21:18'},
   ]);
