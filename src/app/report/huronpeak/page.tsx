@@ -133,7 +133,9 @@ export default function Page() {
             </tbody>
           </table>
         </section>
-        <section id="details"></section>
+        <section id="details">
+          <p>&nbsp;</p>{ ''}
+        </section>
       </article>
     </main>
   );

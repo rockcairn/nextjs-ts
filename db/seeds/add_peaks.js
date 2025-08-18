@@ -61,6 +61,8 @@ exports.seed = async function(knex) {
     {name: 'Snowmass Mountain', height: 14096, range: 'Elk', class: 'II,3', roundtrip_miles: '21.0', elevation_gain: 5700, roundtrip_duration: '4.30', solo: 1, combo: 0, domain: '/', relative_path: 'report/snowmassmountain', description: 'Summit Report.',keywords: 'snowmass mountain', report_date: '2002-07-27 00:00:01'},
     {name: 'Capitol Peak', height: 14141, range: 'Elk', class: 'II,4', roundtrip_miles: '17.0', elevation_gain: 5800, roundtrip_duration: '4.50', solo: 1, combo: 0, domain: '/', relative_path: 'report/capitolpeak', description: 'Summit Report.',keywords: 'capitol peak', report_date: '2003-08-23 00:00:01'},
     {name: 'Mount Whitney', height: 14497, range: 'Sierra Nevada', class: 'II,1', roundtrip_miles: '22.0', elevation_gain: 6360, roundtrip_duration: '10.45', solo: 1, combo: 0, domain: '/', relative_path: 'report/mountwhitney', description: 'Summit Report.',keywords: 'mount whitney', report_date: '2005-07-12 00:00:01'},
+    {name: 'James Peak', height: 13294, range: 'Indian Peaks', class: 'II,1', roundtrip_miles: '7.5', elevation_gain: 2362, roundtrip_duration: '5.34', solo: 0, combo: 0, domain: '/', relative_path: 'report/jamespeak', description: 'Summit Report.',keywords: 'james peak', report_date: '2005-07-03 00:00:01'},
+    {name: 'Mount Neva', height: 12814, range: 'Indian Peaks', class: 'II,2', roundtrip_miles: '9.0', elevation_gain: 2813, roundtrip_duration: '5.30', solo: 0, combo: 0, domain: '/', relative_path: 'report/mountneva', description: 'Summit Report.',keywords: 'mount neva', report_date: '2005-08-21 00:00:01'},
+    {name: 'Navajo Peak', height: 13409, range: 'Indian Peaks', class: 'II,2', roundtrip_miles: '10.6', elevation_gain: 2900, roundtrip_duration: '7.30', solo: 1, combo: 0, domain: '/', relative_path: 'report/navajopeak', description: 'Summit Report.',keywords: 'mount neva', report_date: '2005-09-17 00:00:01'},
   ]);
-};
-
+}

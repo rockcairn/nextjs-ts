@@ -434,4 +434,28 @@ exports.seed = async function (knex) {
         .where({ latitude: 38.749199, longitude: -106.242401 }),
     })
     .where({ name: 'Mount Princeton' });
+
+  await knex('peaks')
+    .update({
+      marker_id: knex('marker')
+        .select('id')
+        .where({ latitude: 39.852013, longitude: -105.689436 }),
+    })
+    .where({ name: 'James Peak' });
+
+  await knex('peaks')
+    .update({
+      marker_id: knex('marker')
+        .select('id')
+        .where({ latitude: 40.0072663, longitude: -105.6885429 }),
+    })
+    .where({ name: 'Mount Neva' });
+
+  await knex('peaks')
+    .update({
+      marker_id: knex('marker')
+        .select('id')
+        .where({ latitude: 40.053530, longitude: -105.646440 }),
+    })
+    .where({ name: 'Navajo Peak' });
 };

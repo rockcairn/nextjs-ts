@@ -60,6 +60,9 @@ exports.seed = async function(knex) {
     {color: '#04FBBD', latitude: 39.466801, longitude: -106.481697},
     {color: '#04FBBD', latitude: 38.945499, longitude: -106.438103},
     {color: '#04FBBD', latitude: 38.749199, longitude: -106.242401},
+    {color: '#f7fb05ff', latitude: 39.852013, longitude: -105.689436},
+    {color: '#f7fb05ff', latitude: 40.0072663, longitude: -105.6885429},
+    {color: '#f7fb05ff', latitude: 40.053530, longitude: -105.646440},
   ]);
 };
 

@@ -66,7 +66,8 @@ export default function Home() {
                 <span className="climbing-h3">Recent Events:</span>
                 <ul className="climbing list-disc mb-4 pl-6">
                   <li>
-                    <a className="home-page">Mount Princeton</a>
+                    <a className="hover:underline hover:underline-offset-4"
+                        href="/report/mountprinceton/2025">Mount Princeton</a>
                     <span className="climbing-med-text pl-1">
                       (June 17, 2025)
                     </span>
