@@ -1,0 +1,184 @@
+import NotImplemented from '@/app/not-implemented';
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RockCairn.com - New York City, New York',
+  keywords: [
+    'New York City',
+    'MOMA',
+    'Ansel Adams',
+    'Appalachian Trail',
+    'Applewood Winery',
+    'Warwick',
+    'Bed and Breakfast',
+  ],
+};
+
+export default function Page() {
+  return (
+    <main className="container content">
+      <ul className="climbing-report-nav">
+        <li>
+          <h1 className="climbing-report-title">
+            New York City Trip September 10-16, 2003
+          </h1>
+        </li>
+        <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="/trips"
+          >
+            Back to Trips
+          </Link>
+        </li>
+      </ul>
+      <div>
+        <Image
+          className="dark:invert climbing-report-image"
+          src="/images/slideshow/nyc_sept_02.jpg"
+          alt="New York Public Library"
+          width={300}
+          height={199}
+          priority
+        />
+      </div>
+      <span className="caption">(New York Public Library)</span>
+
+      <article className="climbing-text">
+        <section id="summary">
+          <h2 className="climbing-h2"></h2>
+          <p>
+            <NotImplemented label="View Slideshow" />
+          </p>
+        </section>
+        <section id="timeline">
+          <h2 className="climbing-h2">Trip Schedule break down</h2>
+          <table className="climbing" width="100%">
+            <tbody>
+              <tr>
+                <td width="10%" className="climbing-table-titles">
+                  Wednesday
+                </td>
+                <td width="10%">3:05PM</td>
+                <td width="80%">-Leave Denver.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>10:35PM</td>
+                <td>-Arrive in NYC.</td>
+              </tr>
+
+              <tr>
+                <td className="climbing-table-titles">Thursday</td>
+                <td>10:00AM</td>
+                <td>-MoMA Ansel Adams exhibit.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>9:00PM</td>
+                <td>-Ground Zero walk..</td>
+              </tr>
+
+              <tr>
+                <td className="climbing-table-titles">Friday</td>
+                <td>10:00AM</td>
+                <td>-Avis rental car.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>12:30PM</td>
+                <td>-Drive out to Bear Mountain for a picnic.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>2:30PM</td>
+                <td>-Hiking on the Appalachian Trail.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>5:30PM</td>
+                <td>-Warwick</td>
+              </tr>
+
+              <tr>
+                <td className="climbing-table-titles">Saturday</td>
+                <td>9:15AM</td>
+                <td>-Applewood Winery.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>12:00PM</td>
+                <td>-Catskill Mountains and the town of Woodstock.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>3:30PM</td>
+                <td>-Drive along Hudson and stone buildings of New Paltz.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>6:00PM</td>
+                <td>-Warwick.</td>
+              </tr>
+
+              <tr>
+                <td className="climbing-table-titles">Sunday</td>
+                <td>6:00AM</td>
+                <td>-Leave Warwick and drive back to NYC..</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>11:00AM</td>
+                <td>-back in NYC.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>6:00PM</td>
+                <td>-Johns Pizzeria near Times Square.</td>
+              </tr>
+
+              <tr>
+                <td className="climbing-table-titles">Monday</td>
+                <td>9:00AM</td>
+                <td>-Sax Fifth Ave. shopping area.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>6:00PM</td>
+                <td>-Central Park fireworks/ rain storm.</td>
+              </tr>
+
+              <tr>
+                <td className="climbing-table-titles">Tuesday</td>
+                <td>6:05AM</td>
+                <td>-Leave NYC.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>10:30AM</td>
+                <td>-Back in Denver.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="details">
+          <p>&nbsp;</p>
+        </section>
+      </article>
+    </main>
+  );
+}
