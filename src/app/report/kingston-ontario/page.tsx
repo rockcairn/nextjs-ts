@@ -79,7 +79,7 @@ export default function Page() {
               <tr>
                 <td className="climbing-table-titles">Friday</td>
                 <td>10:00AM</td>
-                <td>-Tour of Queen's University.</td>
+                <td>-Tour of Queen&apos;s University.</td>
               </tr>
 
               <tr>

@@ -73,7 +73,7 @@ export default function Page() {
                 </td>
                 <td height="19">4:30PM</td>
                 <td height="19">
-                  -Dinner at Coyote Cantina restaurant in Johnson's Corner
+                  -Dinner at Coyote Cantina restaurant in Johnson&apos;s Corner
                   outside of Buena Vista
                 </td>
               </tr>

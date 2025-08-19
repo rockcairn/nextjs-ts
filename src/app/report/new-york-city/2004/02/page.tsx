@@ -78,7 +78,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>7:00PM</td>
-                <td>-Diner at Chez Josephine's.</td>
+                <td>-Diner at Chez Josephine&apos;s.</td>
               </tr>
 
               <tr>
@@ -137,7 +137,7 @@ export default function Page() {
             <span className="climbing-h2">Engagement Story:</span>
             <br />
             During Saturday afternoon we went ice skating in central park, and
-            then we went back to Courtney's apartment to get reading for the
+            then we went back to Courtney&apos;s apartment to get reading for the
             evening. Courtney had already made reservations for dinner at Chez
             Josephine a couple weeks earlier. When we left her apartment I
             mentioned that I had a Valentines gift for her, so I was carrying a
@@ -145,8 +145,8 @@ export default function Page() {
             Square and then walked a couple blocks to the restaurant. I was
             white-knuckling the little red bag, because I knew there was a ring
             in it. Courtney noticed my tension on the subway ride and made a
-            funny comment, "Is everything Ok?" I took a couple deep breaths and
-            said, "Yeah, no problem." She could not figure out why I was so
+            funny comment, &quot;Is everything Ok?&quot; I took a couple deep breaths and
+            said, &quot;Yeah, no problem.&quot; She could not figure out why I was so
             tense, we ride the subway all the time. She did not realized that it
             was little red bag that I was so nervous about, riding the subway is
             not problem unless you are carrying an engagement ring.
@@ -161,10 +161,10 @@ export default function Page() {
             was a white card, different then the rest, so I had her pull that
             out as well as search and pull out a small box wrapped in blue paper
             (Tiffany box). She opened the white card which had written on it,
-            "Will You" and in conversational hearts said "Marry Me". She said
+            &quot;Will You&quot; and in conversational hearts said &quot;Marry Me&quot;. She said
             yes, and I had her open the blue box and pull out the ring. She then
             had me put the ring on her finger. It was a great experience and I
-            can't wait to see her coming down the isle in her wedding dress to
+            can&apos;t wait to see her coming down the isle in her wedding dress to
             join me in marriage.
           </p>
           <p>&nbsp;</p>

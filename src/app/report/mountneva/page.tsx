@@ -95,7 +95,7 @@ export default function Page() {
             meadow to Columbine Lake. The hike to the lake was pretty soggy and
             there are several log crossing which were there to help you stay out
             of the mud. From the lake you head right or to the South. The
-            trail/s that take you to the saddle for a climb up Neva's Northwest
+            trail/s that take you to the saddle for a climb up Neva&apos;s Northwest
             ridge are numerous, so just pick one. As you get closer to the climb
             up to the saddle you should be able to find a well worn path. On our
             way back down we were able to take the most used path all the way
@@ -109,7 +109,7 @@ export default function Page() {
             ridgeline. There is a big knob on the ridgeline, so you are avoiding
             having to climb up that, but you reach the ridgeline just after.
             Once at the ridgeline you can follow it all the way up into the
-            grass slopes of the Mount Neva's West slope. The summit is actually
+            grass slopes of the Mount Neva&apos;s West slope. The summit is actually
             away from the rocky class 4 North ridgeline and across a green slope
             to the right or South.
           </p>

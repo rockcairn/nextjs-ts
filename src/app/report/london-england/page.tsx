@@ -98,7 +98,7 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>2:30:PM</td>
                 <td>
-                  -Original (1:45PM) flight through Chicago, O'Hare was Delayed
+                  -Original (1:45PM) flight through Chicago, O&apos;Hare was Delayed
                   because of weather.
                   <br />
                   -New flight through Washington, Dulles.
@@ -132,7 +132,7 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>10:30AM</td>
                 <td>
-                  -Tower of London, walk past St. Paul's, Ye old Chester Cheese
+                  -Tower of London, walk past St. Paul&apos;s, Ye old Chester Cheese
                   bar.
                 </td>
               </tr>
@@ -142,7 +142,7 @@ export default function Page() {
                 <td>6:00PM</td>
                 <td>
                   -Oxford circus walk through SOHO with Max, Pizza Express,
-                  O'Neil's music room.
+                  O&apos;Neil&apos;s music room.
                 </td>
               </tr>
 
@@ -196,7 +196,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>6:00PM</td>
-                <td>-Bazaaro's Italian Restaurant.</td>
+                <td>-Bazaaro&apos;s Italian Restaurant.</td>
               </tr>
 
               <tr>
@@ -231,7 +231,7 @@ export default function Page() {
                 <td>6:00AM</td>
                 <td>
                   -Tube to Heathrow Airport, Flight back through Chicago,
-                  O'Hare.
+                  O&apos;Hare.
                 </td>
               </tr>
 
@@ -258,7 +258,7 @@ export default function Page() {
             plane was to leave Denver that my traveling buddy, Mike, had a
             passport issue. It seems that in order to gain entrance into another
             country that you need to have a passport that is good for your
-            travel stay as well as an additional 6 months, Mike's was good for
+            travel stay as well as an additional 6 months, Mike&apos;s was good for
             the trip but expired at the end of December. Instead of risking it,
             Mike decided to cancel his plans to travel. I was left with
             uncertainty and eventually decide to go, with the encouragement of
@@ -294,9 +294,9 @@ export default function Page() {
             tube without a problem, I just followed the rest of the crowd.
             Almost all of the tube stops have charge card tube pass machines now
             which make getting a travel card easy.&nbsp; I managed to figure out
-            how to get to the Paddington station via and tube change at Earl's
+            how to get to the Paddington station via and tube change at Earl&apos;s
             Court, however it took me a while to figure out how to find the
-            right train at Earl's Court. One thing that would become apparent
+            right train at Earl&apos;s Court. One thing that would become apparent
             after a couple days riding the tube is that the tube map can not be
             overlaid on a real map and that you should forget about trying to
             keep your NESW sense of direction...just follow the signs.
@@ -318,7 +318,7 @@ export default function Page() {
           </p>
           <p>
             After checking in, I took the tube to Harrods to check out the store
-            who's slogan is, &quot;We&nbsp; have everything.&quot; The store was
+            who&apos;s slogan is, &quot;We&nbsp; have everything.&quot; The store was
             decorated for Christmas and had the greatest window displays. There
             was a Bentley and chauffeur waiting outside one exit; its it not
             every day in the US that you see a Bentley. One observation about
@@ -371,7 +371,7 @@ export default function Page() {
             Pret-A-Manger, I decided to &quot;stay in&quot;, vs. &quot;take
             away.&quot; Which reminds me that when you are in the tube you look
             for the &quot;way out&quot; instead of an &quot;exit&quot;. I also
-            checked out the Millennium Bridge, St. Paul's Cathedral, Ye Old
+            checked out the Millennium Bridge, St. Paul&apos;s Cathedral, Ye Old
             Chester Cheese pub, and an ice skating rink setup at Kings College
             and the Summerset House Courtyard.&nbsp;I found my internet
             connection at the Shoe Library this day and emailed home again.
@@ -387,7 +387,7 @@ export default function Page() {
             never letting go of either of them...its pizza. I at first cut my
             pizza into slices and then picked up the slices by hand, then
             realizing I was the only person doing this I decide to do it the
-            English way. After supper we walked down the street O'Neil's Music
+            English way. After supper we walked down the street O&apos;Neil&apos;s Music
             Room to watch a live performance from a band that was lead by a
             friend of a friend of a friend.
           </p>
@@ -555,7 +555,7 @@ export default function Page() {
             Next, I made my way to the Millennium Bridge, which I used to get
             across to the Tate Modern Gallery. At the gallery I had lunch on the
             7th floor at a window over looking the Thames river and the entire
-            waterfront including a spectacular view of St Paul's Cathedral. At
+            waterfront including a spectacular view of St Paul&apos;s Cathedral. At
             the Gallery I found some Picasso paintings that I had seen in art
             books as well as some new artists that seemed to ride the line
             between genius and insanity. Some of the more memorable works of art

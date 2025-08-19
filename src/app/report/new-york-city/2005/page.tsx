@@ -81,7 +81,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>Afternoon</td>
-                <td>-BAN, Winter's Tale.</td>
+                <td>-BAN, Winter&apos;s Tale.</td>
               </tr>
 
               <tr>
@@ -95,14 +95,14 @@ export default function Page() {
                 <td>Afternoon</td>
                 <td>
                   -MoMA, Central Park, FAO Schwartz, Tiffany, Time Warner
-                  Center, Radio Mexico, Jeremy's Ale House, Staten Island Ferry.
+                  Center, Radio Mexico, Jeremy&apos;s Ale House, Staten Island Ferry.
                 </td>
               </tr>
 
               <tr>
                 <td className="climbing-table-titles">Sunday</td>
                 <td>Morning</td>
-                <td>-Saint Mark's, Hurricane Relief Concert.</td>
+                <td>-Saint Mark&apos;s, Hurricane Relief Concert.</td>
               </tr>
 
               <tr>

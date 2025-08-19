@@ -14,7 +14,7 @@ export default function Page() {
       <ul className="climbing-report-nav">
         <li>
           <h1 className="climbing-report-title">
-            Las Vegas Nevada, Tim's Party Weekend Apr. 14-17, 2006
+            Las Vegas Nevada, Tim&apos;s Party Weekend Apr. 14-17, 2006
           </h1>
         </li>
         <li className="climbing-report-range">

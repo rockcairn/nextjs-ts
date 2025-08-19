@@ -92,7 +92,7 @@ export default function Page() {
               <tr>
                 <td className="climbing-table-titles">Saturday</td>
                 <td>9:00AM</td>
-                <td>-Breakfast at Nick and Neva's place in Santa Ana.</td>
+                <td>-Breakfast at Nick and Neva&apos;s place in Santa Ana.</td>
               </tr>
 
               <tr>
@@ -105,7 +105,7 @@ export default function Page() {
                 <td>&nbsp;</td>
                 <td>8:00PM</td>
                 <td>
-                  -Watch "Venus" by Suzan-Lori Parks with The Man, Later The
+                  -Watch &quot;Venus&quot; by Suzan-Lori Parks with The Man, Later The
                   Baron Docteur performed by Jason Vande Brake.
                 </td>
               </tr>

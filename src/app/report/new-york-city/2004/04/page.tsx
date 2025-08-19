@@ -78,7 +78,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>7:00PM</td>
-                <td>-Lombardi's Pizza in SOHO.</td>
+                <td>-Lombardi&apos;s Pizza in SOHO.</td>
               </tr>
 
               <tr>

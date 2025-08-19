@@ -46,7 +46,7 @@ export default function Page() {
             (<span className="climbing-h2">July 3, 2005</span>) &quot;East
             Slopes&quot; trail from Kingston Peak(FDR353) road. From this TH,
             this class 1 trail runs (7.5miles rt. with 2,362ft. gain). There are
-            several trailheads, the most renowned one is at St. Mary's Glacier.
+            several trailheads, the most renowned one is at St. Mary&apos;s Glacier.
             Our trailhead is found by taking either FS road 4N from Tolland and
             then taking FDR353, or coming from Apex on FDR 353.&nbsp;This is
             also the way to get to James Peak Lake trailhead.
@@ -101,11 +101,11 @@ export default function Page() {
         <section id="details">
           <p>
             From the James Peak Lake TH you can go down to the lakes and then
-            around and up to James Peak's North ridge. Once on the ridge you can
+            around and up to James Peak&apos;s North ridge. Once on the ridge you can
             then make your way back to the Summit. One the other you can avoid
             the steep class 2 climb up to the ridgeline on the North ridge route
             and go for the easy East Slopes. The East slopes route takes the
-            road south of the TH and up into the valley above St. Mary's
+            road south of the TH and up into the valley above St. Mary&apos;s
             Glacier. From here you can either stay close to the ridgeline and
             climb up or go further into the basin and the center of the large
             East slopes.

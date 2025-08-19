@@ -85,7 +85,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>7:00PM</td>
-                <td>-Dinner at Roy's of New York City.</td>
+                <td>-Dinner at Roy&apos;s of New York City.</td>
               </tr>
 
               <tr>
@@ -127,7 +127,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>3:00PM</td>
-                <td>-Graduation Party and Lynn and Peter Peck's.</td>
+                <td>-Graduation Party and Lynn and Peter Peck&apos;s.</td>
               </tr>
 
               <tr>

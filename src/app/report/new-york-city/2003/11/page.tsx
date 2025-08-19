@@ -76,7 +76,7 @@ export default function Page() {
                   <span className="climbing-text">Thursday</span>
                 </td>
                 <td width="10%">8:00AM</td>
-                <td width="80%">-Macy's Thanksgiving Day Parade.</td>
+                <td width="80%">-Macy&apos;s Thanksgiving Day Parade.</td>
               </tr>
 
               <tr>
@@ -122,7 +122,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>9:30PM</td>
-                <td>-O'Flaherty's Pub</td>
+                <td>-O&apos;Flaherty&apos;s Pub</td>
               </tr>
 
               <tr>
@@ -148,7 +148,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>7:30PM</td>
-                <td>-Citarella's for supper.</td>
+                <td>-Citarella&apos;s for supper.</td>
               </tr>
 
               <tr>

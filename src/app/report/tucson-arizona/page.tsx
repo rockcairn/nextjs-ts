@@ -104,7 +104,7 @@ export default function Page() {
                   Friday
                 </td>
                 <td height="19">Morning</td>
-                <td height="19">-Check out Mom's new place, and hair cuts.</td>
+                <td height="19">-Check out Mom&apos;s new place, and hair cuts.</td>
               </tr>
 
               <tr>

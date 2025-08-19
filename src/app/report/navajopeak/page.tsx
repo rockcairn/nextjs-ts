@@ -121,7 +121,7 @@ export default function Page() {
             you get to the chimney for the final ascent. The chimney is reached
             by heading around to the right or Northeast of the summit block. The
             chimney can be seen from the top of Airplane Gully and there is a
-            cairn that marks the entrance (just don't go to far to the left when
+            cairn that marks the entrance (just don&apos;t go to far to the left when
             you head up the ledges and you will be fine). Once on the summit you
             can sit back and enjoy the views from this very distinct and small
             summit.

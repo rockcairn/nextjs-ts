@@ -118,7 +118,7 @@ export default function Page() {
               <tr>
                 <td>&nbsp;</td>
                 <td>3:00PM</td>
-                <td>-Georgia O'Keeffe Museum.</td>
+                <td>-Georgia O&apos;Keeffe Museum.</td>
               </tr>
 
               <tr>
@@ -157,7 +157,7 @@ export default function Page() {
               <tr>
                 <td className="climbing-table-titles">Friday</td>
                 <td>9:00AM</td>
-                <td>-Breakfast at Cafe Pasqual's.</td>
+                <td>-Breakfast at Cafe Pasqual&apos;s.</td>
               </tr>
 
               <tr>
