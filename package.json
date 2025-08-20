@@ -17,6 +17,7 @@
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/forms": "^0.5.10",
     "@vis.gl/react-google-maps": "latest",
+    "captions": "link:yet-another-react-lightbox/plugins/captions",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
     "knex": "^3.1.0",
@@ -24,6 +25,8 @@
     "pg": "^8.16.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "thumbnails": "link:yet-another-react-lightbox/plugins/thumbnails",
+    "yet-another-react-lightbox": "^3.25.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
