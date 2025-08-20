@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -53,14 +53,7 @@ export default function Page() {
             wilderness permits in August for the Whitney Zone, I decided to go
             it alone for a one day assault on the peak. True peak bagging style.
           </p>
-
-          <p>
-            <a className="climbing hover:underline hover:underline-offset-4" href="#details">
-              Read More Details
-            </a>{' '}
-            or{' '}
-			<NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='whitney'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>
