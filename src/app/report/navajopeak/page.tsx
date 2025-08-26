@@ -52,15 +52,7 @@ export default function Page() {
             from the Brainard Lake parking area to get to the Long Lake TH.
           </p>
 
-          <p>
-            <a
-              className="climbing hover:underline hover:underline-offset-4"
-              href="#details"
-            >
-              Read More Details
-            </a>{' '}
-            or <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='whitney'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

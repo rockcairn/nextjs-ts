@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -69,15 +69,7 @@ export default function Page() {
             watching a bat fly over.
           </p>
 
-          <p>
-            <a
-              className="climbing hover:underline hover:underline-offset-4"
-              href="#details"
-            >
-              Read More Details
-            </a>{' '}
-            or <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='belford oxford missouri'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

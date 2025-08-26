@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +6,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'RockCairn.com - Blanca Group',
   keywords: [
-    'Mount Lindsey', 'Blanca Peak', 'Ellingwood Point', 'Little Bear Peak', 'Sangre de Cristo Range',
+    'Mount Lindsey',
+    'Blanca Peak',
+    'Ellingwood Point',
+    'Little Bear Peak',
+    'Sangre de Cristo Range',
   ],
 };
 
@@ -41,32 +45,27 @@ export default function Page() {
       <article className="climbing-text">
         <section id="summary">
           <h2 className="climbing-h2">Summary</h2>
-          <span className="climbing-h2">Mount Lindsey </span>Elevation 14,047ft.
-          (<span className="climbing-h2">Aug. 30, 2003</span>) &quot;North
-          Face&quot;, trail from Huerfano River TH, this className 2+ trail runs
-          (7.8 miles rt. with 3,400ft. gain).{' '}
-          <span className="climbing-h2">Blanca Peak, Ellingwood Point </span>
-          Elevation Blanca 14,349ft. Ellingwood 14,049ft.(
-          <span className="climbing-h2">Aug. 31, 2003</span>)
-          &nbsp;&quot;Northwest Face of Blanca and South Face of
-          Ellingwood&quot;, trail from Como Lake TH, this className 2 trail runs
-          (4.5 miles rt. with 3,000ft. gain).{' '}
-          <span className="climbing-h2">Little Bear Peak</span>Elevation
-          14,040ft. (<span className="climbing-h2">Sept. 1, 2003</span>)
-          &quot;West Ridge&quot;, trail from Como Lake TH, this class 4 trail
-          runs (2.2 miles rt. with 2,150ft. gain). The climb on Lindsey was done
-          with out much visibility, the climb on Blanca and Ellingwood were done
-          on ice covered rocks, and the climb on Little Bear was done with
-          perfect weather and only four other hikers on the entire route.
           <p>
-            <a
-              className="climbing hover:underline hover:underline-offset-4"
-              href="#details"
-            >
-              Read More Details
-            </a>{' '}
-            or <NotImplemented label="View Slideshow" />
+            <span className="climbing-h2">Mount Lindsey </span>Elevation
+            14,047ft. (<span className="climbing-h2">Aug. 30, 2003</span>)
+            &quot;North Face&quot;, trail from Huerfano River TH, this className
+            2+ trail runs (7.8 miles rt. with 3,400ft. gain).{' '}
+            <span className="climbing-h2">Blanca Peak, Ellingwood Point </span>
+            Elevation Blanca 14,349ft. Ellingwood 14,049ft.(
+            <span className="climbing-h2">Aug. 31, 2003</span>)
+            &nbsp;&quot;Northwest Face of Blanca and South Face of
+            Ellingwood&quot;, trail from Como Lake TH, this className 2 trail
+            runs (4.5 miles rt. with 3,000ft. gain).{' '}
+            <span className="climbing-h2">Little Bear Peak</span>Elevation
+            14,040ft. (<span className="climbing-h2">Sept. 1, 2003</span>)
+            &quot;West Ridge&quot;, trail from Como Lake TH, this class 4 trail
+            runs (2.2 miles rt. with 2,150ft. gain). The climb on Lindsey was
+            done with out much visibility, the climb on Blanca and Ellingwood
+            were done on ice covered rocks, and the climb on Little Bear was
+            done with perfect weather and only four other hikers on the entire
+            route.
           </p>
+          <ImageCarousel keywords="blanca lindsey elligwood little bear" />
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>
@@ -226,11 +225,11 @@ export default function Page() {
             to the saddle between the &quot;Iron Nipple&quot; and Lindsey. Once
             on the ridgeline you continue up and then around the left side
             (North Face) and up a rock couloir, this starts the class 2+ climb.
-            You actually traverse around the lift side for some time, so don&apos;t
-            head up a couloir too soon. Once you are up the first couloir you
-            have to traverse over loose rock and sand to another couloir. Once
-            you are up the final couloir the summit is about a 1/5th of a mile
-            down the ridgeline to your left or Southeast.&nbsp;
+            You actually traverse around the lift side for some time, so
+            don&apos;t head up a couloir too soon. Once you are up the first
+            couloir you have to traverse over loose rock and sand to another
+            couloir. Once you are up the final couloir the summit is about a
+            1/5th of a mile down the ridgeline to your left or Southeast.&nbsp;
           </p>
           <p>
             Because this entire last section was in the clouds I could only hope
@@ -266,9 +265,9 @@ export default function Page() {
             actually snowing up above the 12,500 foot mark. So once on the rock
             pile up Blanca, I encounter a thin layer of ice covering the surface
             of all the rocks. Adding insult to injury the clouds moved it at
-            this point and obstructed my view of Blanca&apos;s summit. There are many
-            cairned routes up Blanca and I think the best possible route is to
-            stay in the middle of the large talus face on Blanca and then
+            this point and obstructed my view of Blanca&apos;s summit. There are
+            many cairned routes up Blanca and I think the best possible route is
+            to stay in the middle of the large talus face on Blanca and then
             traverse to Blanca Northwest ridge before gaining the summit. There
             were numerous hikers turning around at this point, but I felt
             determined and I was prepared having brought my winter gear for this

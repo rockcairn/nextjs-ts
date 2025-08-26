@@ -70,15 +70,7 @@ export default function Page() {
             ridgeline hike to Mount Spalding and then back down to Summit lake.
           </p>
 
-          <p>
-            <a
-              className="climbing hover:underline hover:underline-offset-4"
-              href="#details"
-            >
-              Read More Details
-            </a>{' '}
-            or <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='whitney'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

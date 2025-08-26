@@ -58,15 +58,7 @@ export default function Page() {
             you can finally see the summit back to your right.
           </p>
 
-          <p>
-            <a
-              className="climbing hover:underline hover:underline-offset-4"
-              href="#details"
-            >
-              Read More Details
-            </a>{' '}
-            or <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='whitney'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>
