@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -55,9 +55,7 @@ export default function Page() {
 
       <article className="climbing-text">
         <section id="summary">
-          <p>
-            <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='bruce trail 2007'/>
         </section>
         <section id="timeline">
           <article className="climbing-timeline">

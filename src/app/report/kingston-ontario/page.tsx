@@ -60,9 +60,7 @@ export default function Page() {
             distractions. This made it&nbsp; the perfect place to work on
             getting to know someone better.&nbsp;
           </p>
-          <p>
-            <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='trips'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

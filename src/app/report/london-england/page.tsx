@@ -64,9 +64,7 @@ export default function Page() {
             over my itinerary for the next day,&nbsp; read through some guide
             book about what I would see, and watching some British News on TV.
           </p>
-          <p>
-            <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='trips'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

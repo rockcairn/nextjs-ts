@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -41,9 +41,7 @@ export default function Page() {
       <article className="climbing-text">
         <section id="summary">
           <h2 className="climbing-h2"></h2>
-          <p>
-            <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='allegheny jul 2007'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>
@@ -85,7 +83,7 @@ export default function Page() {
                   <a
                     className="climbing"
                     target="_blank"
-                    href="http://www.fs.fed.us/r9/forests/allegheny/recreation/hiking/tracy_ridge/"
+                    href="https://www.fs.usda.gov/r09/allegheny/recreation/tracy-ridge-recreation-area"
                   >
                     trails
                   </a>{' '}

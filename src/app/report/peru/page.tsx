@@ -97,9 +97,7 @@ export default function Page() {
               </a>
             </li>
           </ul>
-          <p>
-            <NotImplemented label="View Slideshow" />
-          </p>
+          <ImageCarousel keywords='trips'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>
