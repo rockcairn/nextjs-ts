@@ -1376,7 +1376,7 @@ exports.seed = async function(knex) {
     {id:1359,name:"grays06_22.jpg",image_path:"/images/slideshow/",keywords:"grays",description:"The car looks very small from here.",order:16,property_id:2,title_id:68},
     {id:1360,name:"grays06_23.jpg",image_path:"/images/slideshow/",keywords:"grays",description:"Descending.",order:17,property_id:2,title_id:68},
     {id:1361,name:"grays06_24.jpg",image_path:"/images/slideshow/",keywords:"grays",description:"Looking back to the top.",order:18,property_id:2,title_id:68},
-    {id:1362,name:"massive_03.jpg",image_path:"/images/slideshow/",keywords:"massive",description:" The View of Mount Massive from the campground turn off coming from Leadville.",order:0,property_id:2,title_id:69},
+    {id:1362,name:"massive_03.jpg",image_path:"/images/slideshow/",keywords:"massive",description:"The View of Mount Massive from the campground turn off coming from Leadville.",order:0,property_id:2,title_id:69},
     {id:1363,name:"massive_02.jpg",image_path:"/images/slideshow/",keywords:"massive",description:"From the same point you get a great view of Mount Elbert.",order:1,property_id:2,title_id:69},
     {id:1364,name:"massive_b2.jpg",image_path:"/images/slideshow/",keywords:"massive",description:"Mount Massive in Black and White.",order:2,property_id:2,title_id:69},
     {id:1365,name:"massive_04.jpg",image_path:"/images/slideshow/",keywords:"massive",description:"Looking down back to halfmoon creek.",order:3,property_id:2,title_id:69},

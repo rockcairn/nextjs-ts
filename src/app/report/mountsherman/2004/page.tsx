@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -68,7 +68,7 @@ export default function Page() {
             fourteener so I suggested that we start off with Sherman.
           </p>
 
-          <ImageCarousel keywords='whitney'/>
+          <ImageCarousel keywords='sherman'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>
@@ -169,6 +169,7 @@ export default function Page() {
             Final note, we did not need or bring a snow axe, but you could
             probably have some fun on the snowfields if you brought one.
           </p>
+           <p>&nbsp;</p>
         </section>
       </article>
     </main>

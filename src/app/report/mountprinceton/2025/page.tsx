@@ -60,7 +60,7 @@ export default function Page() {
             Fork in the morning on our way back to Denver.
           </p>
 
-          <ImageCarousel keywords='whitney'/>
+          <NotImplemented label="View Slideshow" />
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

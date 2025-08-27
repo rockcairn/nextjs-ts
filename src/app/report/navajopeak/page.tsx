@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -52,7 +52,7 @@ export default function Page() {
             from the Brainard Lake parking area to get to the Long Lake TH.
           </p>
 
-          <ImageCarousel keywords='whitney'/>
+          <ImageCarousel keywords='navajo'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

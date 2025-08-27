@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -67,7 +67,7 @@ export default function Page() {
             just get this over with&quot;.
           </p>
 
-          <ImageCarousel keywords='whitney'/>
+          <ImageCarousel keywords='pikes'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

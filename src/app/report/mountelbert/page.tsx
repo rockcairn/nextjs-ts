@@ -1,4 +1,3 @@
-import NotImplemented from '@/app/not-implemented';
 import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
