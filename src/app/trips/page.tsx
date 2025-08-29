@@ -1,6 +1,6 @@
-import { CreateReport } from "@/ui/trips/buttons";
-import TripList from "@/ui/trips/trip-list";
-import { Metadata } from "next";
+import { CreateReport } from '@/ui/trips/buttons';
+import TripList from '@/ui/trips/trip-list';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'RockCairn.com - Trips',
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-    return (
-  <div className="w-full">
+  return (
+    <div className="w-full">
       <div className="flex w-full items-center justify-between">
         <h1 className="text-2xl">Trips</h1>
       </div>
       <div className="mt-4 flex justify-end items-center justify-between gap-2 md:mt-8">
         {/* <Search placeholder="Search invoices..." /> */}
-         <CreateReport />
-        </div>
-        <TripList/>
+        <CreateReport />
+      </div>
+      <TripList />
     </div>
-    );
-  }
+  );
+}

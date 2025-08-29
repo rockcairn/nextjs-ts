@@ -50,7 +50,7 @@ export default async function TripList() {
                       </div>
                     </td>
                     <td className="whitespace-nowrap px-3 py-3">
-                      <span className="hidden sm:inline">{trip.summary}</span>
+                      <span className="hidden sm:inline">{trip.summary.substring(0,130)}<br />{trip.summary.substring(130)}</span>
                       <span className="inline sm:hidden">{trip.summary.substring(0,30) + ' ...'}</span>
                     </td>
 
