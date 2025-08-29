@@ -19,7 +19,7 @@ export default function Page() {
         <li className="climbing-report-range">
           <Link
             className="climbing hover:underline hover:underline-offset-4"
-            href="../trips"
+            href="/trips"
           >
             Back to Trips
           </Link>

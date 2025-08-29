@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -26,7 +26,7 @@ export default function Page() {
         <li className="climbing-report-range">
           <Link
             className="climbing hover:underline hover:underline-offset-4"
-            href="../trips"
+            href="/trips"
           >
             Back to Trips
           </Link>
@@ -47,7 +47,7 @@ export default function Page() {
       <article className="climbing-text">
         <section id="summary">
           <h2 className="climbing-h2"></h2>
-          <ImageCarousel keywords='trips'/>
+          <ImageCarousel keywords='rochester'/>
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

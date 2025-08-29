@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { PhotoIcon } from '@heroicons/react/24/outline';
 import { SlideShow } from '@/lib/types';
 
-export default function ImageCarousel({ keywords }: { keywords: string }) {
+export default function ImageCarousel({ keywords, label }: { keywords: string, label?: string }) {
   const [open, setOpen] = useState(false);
   const [slides, setSlides] = useState<SlideShow[]>([]);
 
@@ -31,7 +31,7 @@ export default function ImageCarousel({ keywords }: { keywords: string }) {
 
   return (
     <div className="mt-4 flex justify-start items-center justify-between gap-2 md:mt-2">
-
+      {label !== undefined && <span>{label}</span> }
       <Link
         className="flex h-6 items-center rounded-lg bg-blue-600 px-2 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
         onClick={handleOpen}
