@@ -2,7 +2,7 @@
 
 - NEXTJS
   - REACTJS FE
-  - SSR with knex and mysql connection
+  - SSR with knex and postgres connections
 
 ## Packages
 
@@ -10,16 +10,17 @@
 - react
 - react-dom
 - knex
-- mysql
+- pg
 - clsx
+- tailwindcss
 - @vis.gl/react-google-maps
+- yet-another-react-lightbox
 
 ## Concepts
 
 - Pulled from various hello world and getting started repos
 - This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-- Content choices are from [rockcairn.com](http://rockcairn.com)
-  - a reinvisioning of the rockcairn site as Nextjs versus php
+- Replatformed site for [rockcairn.com](http://rockcairn.com) which was previously a php site
 
 | Home Page  | Peaks Page | Map Page   |
 | ---------- | ---------- | ---------- |
@@ -39,7 +40,7 @@ psql postgres
 > CREATE DATABASE <databasename>;
 ```
 1. Create a _.env_  and _.env.local_ file based on _.env.sample_
-    - that references your already created mysql database.
+    - that references your already created postgres database.
     - Also add your google api maps key _GOOGLE_MAPS_API_KEY_
 1. Create Tables and Seed your database with knex
     - ``` pnpm migrate ```
@@ -57,3 +58,11 @@ To learn more take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Google Maps Lab](https://developers.google.com/codelabs/maps-platform/maps-platform-101-react-js) - with vis.gl/react-google-maps
 - [React Google Maps](https://visgl.github.io/react-google-maps/) - vis.gl/react-google-maps github repo
+- [Vercel Next.js Hosting](https://vercel.com/) - easy hosting of next.js web applications
+- [Neon postgres DB](https://neon.com/) - easy cloud postgres db connection to Vercel
+
+
+## Copyright
+- All images and page content are Copyright &copy; 1999-2025
+- Feel free to lift and shift the framework (nextjs, and knexjs)
+- "yet-another-react-lightbox" react/node packages used via MIT licensing.
