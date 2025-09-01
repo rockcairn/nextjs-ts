@@ -224,17 +224,7 @@ export async function updateReport(
 }
 
 export async function deleteReport(id: string) {
-  // Authenticate the user if necessary
-  try {
-    checkProductionRestrictions();
-  } catch (error) {
-    console.error(error);
-    return {
-      message: 'Unauthorized Action.',
-      error: 'Unauthorized',
-      status: 401,
-    };
-  }
+  checkProductionRestrictions();
 
   try {
     await dbconnection('peaks').delete().where({ id: id });
