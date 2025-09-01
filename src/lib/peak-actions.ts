@@ -12,13 +12,21 @@ const dbconnection = knex(config[env]);
 const FormSchema = z.object({
   id: z.string(),
   name: z.string().min(1, { message: 'Name field required.' }),
-  height: z.coerce.number().gt(0, { message: 'Please enter a height greater than 0.' }),
+  height: z.coerce
+    .number()
+    .gt(0, { message: 'Please enter a height greater than 0.' }),
   range: z.string().min(1, { message: 'Range field required.' }),
   reportDate: z.string().min(1, { message: 'Report date field required.' }),
   difficulty: z.string().min(1, { message: 'Difficulty field required.' }),
-  roundtripMiles: z.string().min(1, { message: 'Roundtrip miles field required.' }),
-  elevationGain: z.string().min(1, { message: 'Elevation gain field required.' }),
-  roundtripDuration: z.string().min(1, { message: 'Roundtrip duration field required.' }),
+  roundtripMiles: z
+    .string()
+    .min(1, { message: 'Roundtrip miles field required.' }),
+  elevationGain: z
+    .string()
+    .min(1, { message: 'Elevation gain field required.' }),
+  roundtripDuration: z
+    .string()
+    .min(1, { message: 'Roundtrip duration field required.' }),
   solo: z.string().min(1, { message: 'Solo field required.' }),
   combo: z.string().min(1, { message: 'Combo field required.' }),
 });
@@ -48,13 +56,21 @@ function checkProductionRestrictions() {
 }
 
 export async function createReport(prevState: State, formData: FormData) {
+  console.log('state: ' + JSON.stringify(prevState));
+  console.log('formData.keys ' + JSON.stringify(formData.keys()));
+  console.log('formData.values ' + JSON.stringify(formData.values()));
 
-  console.log("state: " + JSON.stringify(prevState));
-  console.log("formData.keys " + JSON.stringify(formData.keys()));
-  console.log("formData.values " + JSON.stringify(formData.values()));
-  
   // Authenticate the user if necessary
-  checkProductionRestrictions();
+  try {
+    checkProductionRestrictions();
+  } catch (error) {
+    console.error(error);
+    return {
+      message: 'Unauthorized Action.',
+      error: 'Unauthorized',
+      status: 401,
+    };
+  }
 
   // Validate form fields using Zod
   const validatedFields = CreateReport.safeParse({
@@ -75,13 +91,24 @@ export async function createReport(prevState: State, formData: FormData) {
     const validationFail = {
       errors: validatedFields.error.flatten().fieldErrors,
       message: 'Missing Fields. Failed to Create Report.',
-    }
-    console.log("fields: " + JSON.stringify(validationFail));
+    };
+    console.log('fields: ' + JSON.stringify(validationFail));
     return JSON.parse(JSON.stringify(validationFail));
   }
-  const { name, height, range, reportDate, difficulty, roundtripMiles, elevationGain, roundtripDuration, solo, combo } = validatedFields.data;
+  const {
+    name,
+    height,
+    range,
+    reportDate,
+    difficulty,
+    roundtripMiles,
+    elevationGain,
+    roundtripDuration,
+    solo,
+    combo,
+  } = validatedFields.data;
 
-  const page = name.replace(/ |,/g, "-");
+  const page = name.replace(/ |,/g, '-');
   try {
     await dbconnection('peaks').insert({
       name: name,
@@ -97,8 +124,8 @@ export async function createReport(prevState: State, formData: FormData) {
       elevation_gain: elevationGain,
       roundtrip_duration: roundtripDuration,
       solo: solo === 'Y' ? 1 : 0,
-      combo: combo === 'Y' ? 1 : 0
-      });
+      combo: combo === 'Y' ? 1 : 0,
+    });
   } catch (error) {
     // If a database error occurs, return a more specific error.
     console.error(error);
@@ -111,10 +138,22 @@ export async function createReport(prevState: State, formData: FormData) {
   redirect('/peaks');
 }
 
-export async function updateReport(id: string, prevState: State, formData: FormData) {
-
-    // Authenticate the user if necessary
-  checkProductionRestrictions();
+export async function updateReport(
+  id: string,
+  prevState: State,
+  formData: FormData
+) {
+  // Authenticate the user if necessary
+  try {
+    checkProductionRestrictions();
+  } catch (error) {
+    console.error(error);
+    return {
+      message: 'Unauthorized Action.',
+      error: 'Unauthorized',
+      status: 401,
+    };
+  }
 
   // Validate form fields using Zod
   const validatedFields = CreateReport.safeParse({
@@ -135,30 +174,41 @@ export async function updateReport(id: string, prevState: State, formData: FormD
     const validationFail = {
       errors: validatedFields.error.flatten().fieldErrors,
       message: 'Missing Fields. Failed to Create Report.',
-    }
+    };
     return JSON.parse(JSON.stringify(validationFail));
   }
-  const { name, height, range, reportDate, difficulty, roundtripMiles, elevationGain, roundtripDuration, solo, combo } = validatedFields.data;
+  const {
+    name,
+    height,
+    range,
+    reportDate,
+    difficulty,
+    roundtripMiles,
+    elevationGain,
+    roundtripDuration,
+    solo,
+    combo,
+  } = validatedFields.data;
 
-  const page = name.replace(/ |,/g, "-");
+  const page = name.replace(/ |,/g, '-');
 
   try {
     await dbconnection('peaks')
       .update({
-      name: name,
-      height: height,
-      range: range,
-      domain: '/', 
-      relative_path: `report/${page}`,
-      description: 'Summit Report.',
-      keywords: name,
-      report_date: reportDate,
-      class: difficulty,
-      roundtrip_miles: roundtripMiles,
-      elevation_gain: elevationGain,
-      roundtrip_duration: roundtripDuration,
-      solo: solo === 'Y' ? 1 : 0,
-      combo: combo === 'Y' ? 1 : 0
+        name: name,
+        height: height,
+        range: range,
+        domain: '/',
+        relative_path: `report/${page}`,
+        description: 'Summit Report.',
+        keywords: name,
+        report_date: reportDate,
+        class: difficulty,
+        roundtrip_miles: roundtripMiles,
+        elevation_gain: elevationGain,
+        roundtrip_duration: roundtripDuration,
+        solo: solo === 'Y' ? 1 : 0,
+        combo: combo === 'Y' ? 1 : 0,
       })
       .where({ id: parseInt(id) });
   } catch (error) {
@@ -174,8 +224,17 @@ export async function updateReport(id: string, prevState: State, formData: FormD
 }
 
 export async function deleteReport(id: string) {
-    // Authenticate the user if necessary
-  checkProductionRestrictions();
+  // Authenticate the user if necessary
+  try {
+    checkProductionRestrictions();
+  } catch (error) {
+    console.error(error);
+    return {
+      message: 'Unauthorized Action.',
+      error: 'Unauthorized',
+      status: 401,
+    };
+  }
 
   try {
     await dbconnection('peaks').delete().where({ id: id });

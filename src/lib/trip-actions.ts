@@ -34,13 +34,21 @@ function checkProductionRestrictions() {
 }
 
 export async function createReport(prevState: State, formData: FormData) {
+  console.log('state: ' + JSON.stringify(prevState));
+  console.log('formData.keys ' + JSON.stringify(formData.keys()));
+  console.log('formData.values ' + JSON.stringify(formData.values()));
 
-  console.log("state: " + JSON.stringify(prevState));
-  console.log("formData.keys " + JSON.stringify(formData.keys()));
-  console.log("formData.values " + JSON.stringify(formData.values()));
-  
   // Authenticate the user if necessary
-  checkProductionRestrictions();
+  try {
+    checkProductionRestrictions();
+  } catch (error) {
+    console.error(error);
+    return {
+      message: 'Unauthorized Action.',
+      error: 'Unauthorized',
+      status: 401,
+    };
+  }
 
   // Validate form fields using Zod
   const validatedFields = CreateReport.safeParse({
@@ -54,13 +62,13 @@ export async function createReport(prevState: State, formData: FormData) {
     const validationFail = {
       errors: validatedFields.error.flatten().fieldErrors,
       message: 'Missing Fields. Failed to Create Report.',
-    }
-    console.log("fields: " + JSON.stringify(validationFail));
+    };
+    console.log('fields: ' + JSON.stringify(validationFail));
     return JSON.parse(JSON.stringify(validationFail));
   }
-  const { reportDate, location, summary  } = validatedFields.data;
+  const { reportDate, location, summary } = validatedFields.data;
 
-  const page = location.replace(/ |,/g, "-");
+  const page = location.replace(/ |,/g, '-');
   try {
     await dbconnection('trips').insert({
       location: location,
@@ -69,7 +77,7 @@ export async function createReport(prevState: State, formData: FormData) {
       summary: summary,
       keywords: location,
       report_date: reportDate,
-      });
+    });
   } catch (error) {
     // If a database error occurs, return a more specific error.
     console.error(error);
@@ -82,10 +90,22 @@ export async function createReport(prevState: State, formData: FormData) {
   redirect('/trips');
 }
 
-export async function updateReport(id: string, prevState: State, formData: FormData) {
-
-    // Authenticate the user if necessary
-  checkProductionRestrictions();
+export async function updateReport(
+  id: string,
+  prevState: State,
+  formData: FormData
+) {
+  // Authenticate the user if necessary
+  try {
+    checkProductionRestrictions();
+  } catch (error) {
+    console.error(error);
+    return {
+      message: 'Unauthorized Action.',
+      error: 'Unauthorized',
+      status: 401,
+    };
+  }
 
   // Validate form fields using Zod
   const validatedFields = CreateReport.safeParse({
@@ -99,22 +119,22 @@ export async function updateReport(id: string, prevState: State, formData: FormD
     const validationFail = {
       errors: validatedFields.error.flatten().fieldErrors,
       message: 'Missing Fields. Failed to Create Report.',
-    }
+    };
     return JSON.parse(JSON.stringify(validationFail));
   }
   const { location, summary, reportDate } = validatedFields.data;
 
-  const page = location.replace(/ |,/g, "-");
+  const page = location.replace(/ |,/g, '-');
 
   try {
     await dbconnection('trips')
       .update({
-      location: location,
-      summary: summary,
-      domain: '/', 
-      relative_path: `report/${page}`,
-      keywords: location,
-      report_date: reportDate,
+        location: location,
+        summary: summary,
+        domain: '/',
+        relative_path: `report/${page}`,
+        keywords: location,
+        report_date: reportDate,
       })
       .where({ id: parseInt(id) });
   } catch (error) {
@@ -130,8 +150,17 @@ export async function updateReport(id: string, prevState: State, formData: FormD
 }
 
 export async function deleteReport(id: string) {
-    // Authenticate the user if necessary
-  checkProductionRestrictions();
+  // Authenticate the user if necessary
+  try {
+    checkProductionRestrictions();
+  } catch (error) {
+    console.error(error);
+    return {
+      message: 'Unauthorized Action.',
+      error: 'Unauthorized',
+      status: 401,
+    };
+  }
 
   try {
     await dbconnection('trips').delete().where({ id: id });
