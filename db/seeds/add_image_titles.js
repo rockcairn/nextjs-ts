@@ -460,5 +460,10 @@ exports.seed = async function (knex) {
       keywords: 'bierstadt',
       title: 'Mount Bierstadt - Georgetown Day Trip, Aug 3, 2020',
     },
+    {
+      id: 100,
+      keywords: 'princeton 2025',
+      title: 'Mount Princeton - South Fork Trip, June 17, 2025',
+    },
   ]);
 };

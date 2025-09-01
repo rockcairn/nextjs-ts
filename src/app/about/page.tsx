@@ -98,9 +98,9 @@ export default function Page() {
             <ImageCarousel keywords="calendar 2010" label="Calendar 2010" />
             <ImageCarousel keywords="calendar 2009" label="Calendar 2009" />
             <ImageCarousel keywords="calendar 2008" label="Calendar 2008" />
-            <ImageCarousel keywords="calendar 2007" label="Calendar 2007" />
           </article>
           <article className="bg-white rounded-lg shadow p-4">
+            <ImageCarousel keywords="calendar 2007" label="Calendar 2007" />
             <ImageCarousel keywords="calendar 2006" label="Calendar 2006" />
             <ImageCarousel keywords="calendar 2005" label="Calendar 2005" />
             <ImageCarousel keywords="calendar 2004" label="Calendar 2004" />

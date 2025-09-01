@@ -54,5 +54,6 @@ exports.seed = async function(knex) {
     {location: 'Glenwood Springs, Colorado', domain: '/',relative_path: 'report/glenwood-springs', summary: 'Glenwood Springs, Colorado, The Hotel Colorado, Glenwood Springs Hot Springs, Glenwood Cayon Biking, Independence Pass Drive.', report_date: '2013-07-10 22:21:18'},
     {location: 'Denver, Colorado', domain: '/',relative_path: 'report/denver/2013/07', summary: 'Denver Colorado, Train Museum, City Park Paddle Boats, Playgrounds and Parks.', report_date: '2013-07-04 22:21:18'},
     {location: 'Mount Bierstadt', domain: '/', relative_path: 'report/mountbierstadt/2020', summary: 'Mount Bierstadt - Georgetown Day Trip 2020.', report_date: '2020-08-03 09:21:18'},
+    {location: 'Holy Cross Wilderness', domain: '/', relative_path: 'report/holy-cross-wilderness', summary: 'Holy Cross Wilderness - Minturn Backpacking Trip 1999.', report_date: '1999-08-06 09:21:18'},
   ]);
 };

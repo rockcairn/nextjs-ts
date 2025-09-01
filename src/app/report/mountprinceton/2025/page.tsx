@@ -1,4 +1,4 @@
-import NotImplemented from '@/app/not-implemented';
+import ImageCarousel from '@/utils/ImageCarousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -60,7 +60,7 @@ export default function Page() {
             Fork in the morning on our way back to Denver.
           </p>
 
-          <NotImplemented label="View Slideshow" />
+          <ImageCarousel keywords="princeton 2025" />
         </section>
         <section id="timeline">
           <h2 className="climbing-h2">Trip Schedule break down</h2>

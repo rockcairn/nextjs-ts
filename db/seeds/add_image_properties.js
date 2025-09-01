@@ -10,5 +10,7 @@ exports.seed = async function (knex) {
     { id: 2, width: 500, height: 333, type: 'jpg' },
     { id: 3, width: 375, height: 500, type: 'jpg' },
     { id: 4, width: 333, height: 500, type: 'jpg' },
+    { id: 5, width: 768, height: 1024, type: 'jpg' },
+    { id: 6, width: 1024, height: 768, type: 'jpg' },
   ]);
 };
