@@ -27,6 +27,14 @@ export default function Page() {
             Sawatch Range
           </Link>
         </li>
+         <li className="climbing-report-range">
+          <Link
+            className="climbing hover:underline hover:underline-offset-4"
+            href="2025"
+          >
+            2025 Report
+          </Link>
+        </li>
       </ul>
       <div>
         <Image
@@ -50,7 +58,7 @@ export default function Page() {
             <span className="climbing-h2">Mount Elbert </span>Elevation
             14,440ft. (<span className="climbing-h2">Jul. 21, 2002</span>) &quot;East
             Ridge&quot; trail from South Mount Elbert 4X4 TH. From this TH, this
-            class 1 trail runs (7.6 miles rt. with 4,000ft. gain). TH directions
+            class 1 trail runs (7.6 miles rt. with 4,000ft. gain) add 2 miles for travel on the CT. TH directions
             are as follows, take 82 West 4 miles to Lake View campground sign,
             go past campground to a scenic overlook,&nbsp; right next to an over
             look is a 4X4 road go 1.8 miles to end of rd and to the TH. The
@@ -72,9 +80,7 @@ export default function Page() {
                 <td width="10%" className="climbing-table-titles">
                   Saturday
                 </td>
-
                 <td width="10%">prev. day</td>
-
                 <td width="80%">
                   -
                   <a href="laplatapeak" className="climbing">
@@ -87,49 +93,37 @@ export default function Page() {
                 <td width="10%" className="climbing-table-titles">
                   Sunday
                 </td>
-
                 <td width="10%">5:15AM</td>
-
                 <td width="80%">-leave the TH</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>7:40AM</td>
-
                 <td>-at Mount Elbert Summit</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>Picture Op</td>
-
                 <td>-Stop for a photo opportunity.</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>9:30AM</td>
-
-                <td>-back at TH</td>
+                <td>-trail run, back at TH</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>10:30AM</td>
-
                 <td>-lunch back at the TH.</td>
               </tr>
 
               <tr>
                 <td>&nbsp;</td>
-
                 <td>1:40PM</td>
-
                 <td>-back home.</td>
               </tr>
             </tbody>
@@ -152,6 +146,7 @@ export default function Page() {
             East Ridge Elbert Trail. Climb the East Ridge Elbert Trail to the
             Summit.
           </p>
+           <p>&nbsp;</p>
         </section>
       </article>
     </main>

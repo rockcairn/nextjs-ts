@@ -180,7 +180,7 @@ exports.seed = async function (knex) {
     },
     { id: 37, keywords: 'colorado-openspace', title: 'Open Space Near Denver' },
     { id: 38, keywords: 'home-projects', title: 'Home Projects' },
-    { id: 39, keywords: 'toronto-condo', title: 'Toronto Condo and Alleyway' },
+    { id: 39, keywords: 'elbert 2025', title: 'Mount Elbert - Leadville Trip, Sep. 13, 2025' },
     { id: 40, keywords: 'calendar-2004', title: '2004 RockCairn.com Calendar' },
     { id: 41, keywords: 'calendar-2005', title: '2005 RockCairn.com Calendar' },
     { id: 42, keywords: 'calendar-2006', title: '2006 RockCairn.com Calendar' },

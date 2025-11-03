@@ -6,7 +6,7 @@ exports.seed = async function(knex) {
   // Deletes ALL existing entries
   await knex('peaks').del()
   await knex('peaks').insert([
-    {name: 'Mount Elbert', height: 14440, range: 'Sawatch', class: 'II,1', roundtrip_miles: '7.6', elevation_gain: 4000, roundtrip_duration: '4.15', solo: 1, combo: 0, domain: '/', relative_path: 'report/mountelbert', description: 'Summit Report.',keywords: 'mount elbert', report_date: '2002-07-21 00:00:01'},
+    {name: 'Mount Elbert', height: 14440, range: 'Sawatch', class: 'II,1', roundtrip_miles: '9.6', elevation_gain: 4000, roundtrip_duration: '4.15', solo: 1, combo: 0, domain: '/', relative_path: 'report/mountelbert/2002', description: 'Summit Report.',keywords: 'mount elbert', report_date: '2002-07-21 00:00:01'},
     {name: 'Mount Massive', height: 14428, range: 'Sawatch', class: 'II,2', roundtrip_miles: '6.3', elevation_gain: 3960, roundtrip_duration: '7.15', solo: 1, combo: 0, domain: '/', relative_path: 'report/mountmassive', description: 'Summit Report.',keywords: 'mount massive', report_date: '2001-09-11 00:00:01'},
     {name: 'Mount Harvard', height: 14427, range: 'Sawatch', class: 'II,2 (III,2)', roundtrip_miles: '13.5', elevation_gain: 5900, roundtrip_duration: '11.10', solo: 0, combo: 1, domain: '/', relative_path: 'report/harvardgroup', description: 'Summit Report.',keywords: 'mount harvard', report_date: '2003-06-28 00:00:01'},
     {name: 'Mount Columbia', height: 14079, range: 'Sawatch', class: 'II,2 (II,2)', roundtrip_miles: '13.5', elevation_gain: 5900, roundtrip_duration: '11.10', solo: 0, combo: 1, domain: '/', relative_path: 'report/harvardgroup', description: 'Summit Report.',keywords: 'mount Columbia', report_date: '2003-06-28 00:00:01'},

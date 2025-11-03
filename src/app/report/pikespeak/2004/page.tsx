@@ -20,7 +20,7 @@ export default function Page() {
         <li className="climbing-report-range">
           <Link
             className="climbing hover:underline hover:underline-offset-4"
-            href="../peaks?search=Front"
+            href="../../peaks?search=Front"
           >
             Front Range
           </Link>

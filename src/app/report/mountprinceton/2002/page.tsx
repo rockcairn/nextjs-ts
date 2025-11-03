@@ -22,7 +22,7 @@ export default function Page() {
         <li className="climbing-report-range">
           <Link
             className="climbing hover:underline hover:underline-offset-4"
-            href="../peaks?search=Sawatch"
+            href="../../peaks?search=Sawatch"
           >
             Sawatch Range
           </Link>

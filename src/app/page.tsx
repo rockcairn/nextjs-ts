@@ -39,7 +39,7 @@ export default function Home() {
             <section className="bg-white rounded-lg shadow p-6">
               <span className="climbing-h2">Web mastered by Aaron Penner</span>
               <span className="climbing-text pl-2">
-                [Last updated: Aug. 10, 2025]
+                [Last updated: Nov. 3, 2025]
               </span>
             </section>
           </article>
@@ -65,6 +65,13 @@ export default function Home() {
                 <br />
                 <span className="climbing-h3">Recent Events:</span>
                 <ul className="climbing list-disc mb-4 pl-6">
+                   <li>
+                    <a className="hover:underline hover:underline-offset-4"
+                        href="/report/mountelbert/2025">Mount Elbert</a>
+                    <span className="climbing-med-text pl-1">
+                      (September 13, 2025)
+                    </span>
+                  </li>
                   <li>
                     <a className="hover:underline hover:underline-offset-4"
                         href="/report/mountprinceton/2025">Mount Princeton</a>

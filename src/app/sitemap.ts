@@ -160,7 +160,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: 'https://rockcairn.com/report/mountelbert',
+      url: 'https://rockcairn.com/report/mountelbert/2002',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://rockcairn.com/report/mountelbert/2025',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
