@@ -63,6 +63,6 @@ To learn more take a look at the following resources:
 
 
 ## Copyright
-- All images and page content are Copyright &copy; 1999-2025
+- All images and page content are Copyright &copy; 1999-2026
 - Feel free to lift and shift the framework (nextjs, and knexjs)
 - "yet-another-react-lightbox" react/node packages used via MIT licensing.

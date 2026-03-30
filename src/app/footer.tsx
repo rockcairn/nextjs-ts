@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="text-center p-4 mt-4">
       <p>
         <span className="climbing-text">
-          Copyright &copy; 1999-2025{' '}
+          Copyright &copy; 1999-2026{' '}
           <a className="home-page" href="about">
             Aaron Penner
           </a>
